@@ -77,7 +77,10 @@ WEB_RE = re.compile(
 
 def _parse_syslog_ts(value: str, now: datetime | None = None) -> datetime:
     if value[:4].isdigit():  # ISO timestamp
-        ts = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        # Python 3.10's fromisoformat only accepts 3 or 6 fractional digits,
+        # so pad/trim the fraction to 6 (rsyslog and others vary).
+        value = re.sub(r"\.(\d+)", lambda m: "." + m[1][:6].ljust(6, "0"), value.replace("Z", "+00:00"), count=1)
+        ts = datetime.fromisoformat(value)
         if ts.tzinfo is None:
             ts = ts.replace(tzinfo=timezone.utc)
         return ts.astimezone(timezone.utc)
