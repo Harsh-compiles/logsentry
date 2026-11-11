@@ -1,0 +1,41 @@
+#!/bin/bash
+# Bootstraps the LogSentry monitor. Output: /var/log/logsentry-setup.log
+set -euxo pipefail
+exec > /var/log/logsentry-setup.log 2>&1
+
+hostnamectl set-hostname monitor
+export DEBIAN_FRONTEND=noninteractive
+apt-get update -y
+apt-get install -y docker.io git rsyslog
+systemctl enable --now docker
+
+git clone --depth 1 "${repo_url}" /opt/logsentry
+
+# --- central log receiver (rsyslog drops privileges to the syslog user) -----
+install -d -o syslog -g adm -m 0755 /var/log/remote
+install -o syslog -g adm -m 0644 /dev/null /var/log/remote/remote.log
+cp /opt/logsentry/deploy/rsyslog/monitor-receiver.conf /etc/rsyslog.d/10-logsentry-receiver.conf
+cp /opt/logsentry/deploy/logrotate-remote /etc/logrotate.d/logsentry-remote
+systemctl restart rsyslog
+
+# --- LogSentry container --------------------------------------------------
+cd /opt/logsentry
+docker build -t logsentry .
+
+umask 077
+cat > /opt/logsentry/.env <<'ENVFILE'
+LOGSENTRY_LOGS=/logs/remote.log
+LOGSENTRY_WEBHOOK=${webhook_url}
+LOGSENTRY_ALERT_LEVEL=${alert_level}
+LOGSENTRY_API_TOKEN=${api_token}
+ENVFILE
+
+docker run -d --name logsentry --restart unless-stopped \
+  -p 8080:8080 \
+  --env-file /opt/logsentry/.env \
+  -v /var/log/remote:/logs:ro \
+  -v logsentry-data:/data \
+  --read-only --tmpfs /tmp --cap-drop ALL --security-opt no-new-privileges \
+  logsentry
+
+echo "LogSentry monitor ready"

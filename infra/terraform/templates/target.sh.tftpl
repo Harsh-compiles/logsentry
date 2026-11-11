@@ -1,0 +1,56 @@
+#!/bin/bash
+# Bootstraps a monitored machine: hardens it and forwards all logs to the monitor.
+# Output: /var/log/logsentry-setup.log
+set -euxo pipefail
+exec > /var/log/logsentry-setup.log 2>&1
+
+hostnamectl set-hostname ${hostname}
+export DEBIAN_FRONTEND=noninteractive
+apt-get update -y
+apt-get install -y rsyslog git ufw%{ if web } nginx%{ endif }
+
+git clone --depth 1 "${repo_url}" /opt/logsentry
+
+# --- ship every log line to the monitor ------------------------------------
+sed "s/MONITOR_IP/${monitor_ip}/" /opt/logsentry/deploy/rsyslog/agent-forwarder.conf \
+  > /etc/rsyslog.d/10-logsentry-forward.conf
+
+%{ if web ~}
+# --- nginx access log -> syslog -> monitor ---------------------------------
+cp /opt/logsentry/deploy/nginx-syslog.conf /etc/nginx/conf.d/logsentry.conf
+nginx -t && systemctl reload nginx
+%{ endif ~}
+
+# --- SSH: keys only (the cloud image default, enforced here) ---------------
+cat > /etc/ssh/sshd_config.d/10-logsentry-hardening.conf <<'SSHD'
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+PermitRootLogin no
+MaxAuthTries 3
+SSHD
+systemctl reload ssh || systemctl restart ssh || true  # ssh is socket-activated on 24.04
+
+# --- host firewall ----------------------------------------------------------
+ufw default deny incoming
+ufw default allow outgoing
+ufw allow 22/tcp
+%{ if web ~}
+ufw allow 80/tcp
+%{ endif ~}
+# UFW's own logging is rate-limited to ~3 lines/minute, which hides port scans.
+# Log every new connection attempt to a closed port instead (capped per source).
+ufw logging off
+python3 - <<'PY'
+path = "/etc/ufw/before.rules"
+rule = ('-A ufw-before-input -p tcp --syn -m conntrack --ctstate NEW -m multiport ! --dports 22,80 '
+        '-m hashlimit --hashlimit-upto 50/sec --hashlimit-burst 200 --hashlimit-mode srcip '
+        '--hashlimit-name logsentry -j LOG --log-prefix "[UFW BLOCK] "\n')
+text = open(path).read()
+if "logsentry" not in text:
+    head, sep, tail = text.partition("\nCOMMIT")
+    open(path, "w").write(head + "\n# logsentry: log scans to closed ports\n" + rule.rstrip("\n") + sep + tail)
+PY
+ufw --force enable
+
+systemctl restart rsyslog
+logger -t logsentry-setup "${hostname} is now forwarding logs to ${monitor_ip}"

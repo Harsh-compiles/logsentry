@@ -1,0 +1,12 @@
+# /etc/logrotate.d/logsentry-remote  (on the MONITOR server)
+/var/log/remote/remote.log {
+    daily
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    notifempty
+    postrotate
+        /usr/lib/rsyslog/rsyslog-rotate
+    endscript
+}

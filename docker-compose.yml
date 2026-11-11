@@ -1,0 +1,32 @@
+# Local demo (simulated attacks, no servers needed):
+#   docker compose up demo          -> http://localhost:8080
+#
+# Real monitoring (on the monitor server, reading logs that rsyslog collects):
+#   docker compose --profile prod up -d monitor
+
+services:
+  demo:
+    build: .
+    command: ["python", "-m", "logsentry", "demo", "--attack-every", "8"]
+    ports:
+      - "8080:8080"
+    environment:
+      LOGSENTRY_WEBHOOK: ${LOGSENTRY_WEBHOOK:-}
+
+  monitor:
+    profiles: ["prod"]
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      LOGSENTRY_LOGS: /logs/remote.log
+      LOGSENTRY_WEBHOOK: ${LOGSENTRY_WEBHOOK:-}
+      LOGSENTRY_ALERT_LEVEL: ${LOGSENTRY_ALERT_LEVEL:-high}
+      LOGSENTRY_API_TOKEN: ${LOGSENTRY_API_TOKEN:-}
+    volumes:
+      - /var/log/remote:/logs:ro        # written by rsyslog, read-only for the container
+      - logsentry-data:/data
+
+volumes:
+  logsentry-data:

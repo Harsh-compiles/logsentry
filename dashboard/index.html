@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LogSentry · Security Monitoring</title>
+  <meta name="description" content="LogSentry: lightweight security monitoring that detects brute force, port scans and web attacks in real time.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 12h2l1.2-3 1.8 6 1.2-3H16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="wordmark">LOG<b>SENTRY</b></span>
+    </div>
+    <div class="status">
+      <span id="mode-pill" class="pill"><i></i><span id="mode-text">connecting</span></span>
+      <span id="hosts" class="meta"></span>
+      <span id="updated" class="meta"></span>
+    </div>
+  </header>
+
+  <div id="demo-banner" class="banner" hidden>
+    <strong>Demo snapshot.</strong>
+    <span id="demo-text">Recorded from a live run of the attack simulator.</span>
+    Run it yourself with <code>python -m logsentry demo</code> to watch alerts arrive in real time.
+  </div>
+
+  <main>
+    <section class="kpis" aria-label="Key metrics">
+      <div class="kpi"><span class="label">Events analysed</span><span class="value" id="k-events">–</span><span class="sub" id="k-lines"></span></div>
+      <div class="kpi"><span class="label">Alerts</span><span class="value" id="k-alerts">–</span><span class="sub" id="k-open"></span></div>
+      <div class="kpi crit"><span class="label">Critical</span><span class="value" id="k-critical">–</span><span class="sub">needs action now</span></div>
+      <div class="kpi"><span class="label">Attacker IPs</span><span class="value" id="k-ips">–</span><span class="sub">unique sources</span></div>
+      <div class="kpi"><span class="label">Detection latency</span><span class="value" id="k-latency">–</span><span class="sub" id="k-latency-max"></span></div>
+    </section>
+
+    <section class="grid two">
+      <article class="panel">
+        <header><h2>Activity</h2><span class="legend"><i class="sw ev"></i>events / min <i class="sw al"></i>alerts</span></header>
+        <div id="timeline" class="chart"></div>
+      </article>
+      <article class="panel">
+        <header><h2>Severity</h2></header>
+        <div id="severity"></div>
+      </article>
+    </section>
+
+    <section class="grid two">
+      <article class="panel">
+        <header><h2>Detections</h2></header>
+        <div id="by-rule" class="bars"></div>
+      </article>
+      <article class="panel">
+        <header><h2>Top attackers</h2></header>
+        <table class="table" id="attackers"><thead><tr><th>Source IP</th><th>Worst</th><th class="num">Alerts</th><th class="num">Events</th></tr></thead><tbody></tbody></table>
+      </article>
+    </section>
+
+    <section class="panel feed">
+      <header>
+        <h2>Alert feed</h2>
+        <div class="controls">
+          <div class="chips" id="chips" role="group" aria-label="Filter by severity">
+            <button data-sev="" class="on">All</button><button data-sev="critical">Critical</button><button data-sev="high">High</button><button data-sev="medium">Medium</button><button data-sev="low">Low</button>
+          </div>
+          <input id="search" type="search" placeholder="Filter by IP, host, rule…" aria-label="Search alerts">
+        </div>
+      </header>
+      <div class="feed-head"><span>Time</span><span>Severity</span><span>Detection</span><span>Source</span><span>Host</span><span>ATT&amp;CK</span></div>
+      <ul id="alerts" class="alerts"></ul>
+      <p id="empty" class="empty" hidden>No alerts match.</p>
+    </section>
+
+    <section class="panel">
+      <header><h2>Detection coverage</h2><span class="meta">mapped to MITRE ATT&amp;CK</span></header>
+      <ul id="rules" class="rules"></ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    LogSentry · open-source mini SIEM · <a href="https://github.com/Harsh-compiles/logsentry">source on GitHub</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

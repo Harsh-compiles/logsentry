@@ -1,0 +1,14 @@
+.git
+.github
+.venv
+__pycache__
+*.pyc
+*.db
+*.db-*
+infra
+tests
+docs
+lab-logs
+.pytest_cache
+.ruff_cache
+dashboard/demo-data.json

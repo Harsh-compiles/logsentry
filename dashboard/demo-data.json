@@ -1,0 +1,2823 @@
+{
+ "mode": "demo",
+ "captured_at": "2026-11-11T15:16:04.583689+00:00",
+ "lines_seen": 5888,
+ "stats": {
+  "generated_at": "2026-11-11T15:16:04.583717+00:00",
+  "total_events": 5888,
+  "events_by_source": {
+   "firewall": 857,
+   "ssh": 470,
+   "sudo": 101,
+   "web": 4460
+  },
+  "alerts_by_severity": {
+   "critical": 9,
+   "high": 58,
+   "medium": 50,
+   "low": 1
+  },
+  "total_alerts": 118,
+  "open_alerts": 118,
+  "alerts_by_rule": [
+   {
+    "title": "SSH brute-force attack",
+    "n": 25
+   },
+   {
+    "title": "Port scan detected",
+    "n": 19
+   },
+   {
+    "title": "Path traversal attempt",
+    "n": 16
+   },
+   {
+    "title": "Web directory enumeration",
+    "n": 15
+   },
+   {
+    "title": "Sensitive file probe",
+    "n": 10
+   },
+   {
+    "title": "SQL injection attempt",
+    "n": 10
+   },
+   {
+    "title": "SSH password spraying",
+    "n": 7
+   },
+   {
+    "title": "Command injection attempt",
+    "n": 6
+   }
+  ],
+  "top_attackers": [
+   {
+    "ip": "192.0.2.131",
+    "alerts": 3,
+    "events": 3,
+    "worst": 3
+   },
+   {
+    "ip": "192.0.2.103",
+    "alerts": 2,
+    "events": 2,
+    "worst": 3
+   },
+   {
+    "ip": "192.0.2.209",
+    "alerts": 2,
+    "events": 2,
+    "worst": 3
+   },
+   {
+    "ip": "192.0.2.56",
+    "alerts": 2,
+    "events": 2,
+    "worst": 3
+   },
+   {
+    "ip": "198.51.100.178",
+    "alerts": 2,
+    "events": 21,
+    "worst": 3
+   },
+   {
+    "ip": "198.51.100.213",
+    "alerts": 2,
+    "events": 2,
+    "worst": 3
+   },
+   {
+    "ip": "203.0.113.254",
+    "alerts": 2,
+    "events": 2,
+    "worst": 3
+   },
+   {
+    "ip": "192.0.2.152",
+    "alerts": 2,
+    "events": 45,
+    "worst": 2
+   }
+  ],
+  "unique_attackers": 90,
+  "avg_latency_ms": 50.9,
+  "max_latency_ms": 105.5,
+  "hosts": [
+   "web-01",
+   "web-02",
+   "bastion"
+  ],
+  "timeline": [
+   {
+    "t": "2026-11-11T14:47",
+    "events": 0,
+    "alerts": 0
+   },
+   {
+    "t": "2026-11-11T14:48",
+    "events": 0,
+    "alerts": 0
+   },
+   {
+    "t": "2026-11-11T14:49",
+    "events": 0,
+    "alerts": 0
+   },
+   {
+    "t": "2026-11-11T14:50",
+    "events": 0,
+    "alerts": 0
+   },
+   {
+    "t": "2026-11-11T14:51",
+    "events": 254,
+    "alerts": 6
+   },
+   {
+    "t": "2026-11-11T14:52",
+    "events": 266,
+    "alerts": 5
+   },
+   {
+    "t": "2026-11-11T14:53",
+    "events": 224,
+    "alerts": 4
+   },
+   {
+    "t": "2026-11-11T14:54",
+    "events": 269,
+    "alerts": 6
+   },
+   {
+    "t": "2026-11-11T14:55",
+    "events": 192,
+    "alerts": 4
+   },
+   {
+    "t": "2026-11-11T14:56",
+    "events": 245,
+    "alerts": 5
+   },
+   {
+    "t": "2026-11-11T14:57",
+    "events": 178,
+    "alerts": 4
+   },
+   {
+    "t": "2026-11-11T14:58",
+    "events": 233,
+    "alerts": 4
+   },
+   {
+    "t": "2026-11-11T14:59",
+    "events": 234,
+    "alerts": 5
+   },
+   {
+    "t": "2026-11-11T15:00",
+    "events": 214,
+    "alerts": 6
+   },
+   {
+    "t": "2026-11-11T15:01",
+    "events": 234,
+    "alerts": 5
+   },
+   {
+    "t": "2026-11-11T15:02",
+    "events": 214,
+    "alerts": 5
+   },
+   {
+    "t": "2026-11-11T15:03",
+    "events": 259,
+    "alerts": 4
+   },
+   {
+    "t": "2026-11-11T15:04",
+    "events": 192,
+    "alerts": 5
+   },
+   {
+    "t": "2026-11-11T15:05",
+    "events": 265,
+    "alerts": 3
+   },
+   {
+    "t": "2026-11-11T15:06",
+    "events": 276,
+    "alerts": 6
+   },
+   {
+    "t": "2026-11-11T15:07",
+    "events": 246,
+    "alerts": 2
+   },
+   {
+    "t": "2026-11-11T15:08",
+    "events": 291,
+    "alerts": 6
+   },
+   {
+    "t": "2026-11-11T15:09",
+    "events": 210,
+    "alerts": 5
+   },
+   {
+    "t": "2026-11-11T15:10",
+    "events": 257,
+    "alerts": 4
+   },
+   {
+    "t": "2026-11-11T15:11",
+    "events": 208,
+    "alerts": 8
+   },
+   {
+    "t": "2026-11-11T15:12",
+    "events": 237,
+    "alerts": 4
+   },
+   {
+    "t": "2026-11-11T15:13",
+    "events": 234,
+    "alerts": 4
+   },
+   {
+    "t": "2026-11-11T15:14",
+    "events": 233,
+    "alerts": 4
+   },
+   {
+    "t": "2026-11-11T15:15",
+    "events": 210,
+    "alerts": 4
+   },
+   {
+    "t": "2026-11-11T15:16",
+    "events": 13,
+    "alerts": 0
+   }
+  ]
+ },
+ "alerts": [
+  {
+   "id": "f39fd479c8a5",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.156 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T15:15:53.245700+00:00",
+   "detected_at": "2026-11-11T15:15:53.290018+00:00",
+   "latency_ms": 44.3,
+   "src_ip": "192.0.2.156",
+   "host": "web-02",
+   "user": null,
+   "count": 15,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:15:58.653659+00:00 web-02 sshd[51290]: Failed password for invalid user admin from 192.0.2.156 port 46883 ssh2",
+    "2026-11-11T15:15:59.502367+00:00 web-02 sshd[18782]: Failed password for invalid user admin from 192.0.2.156 port 45135 ssh2",
+    "2026-11-11T15:16:00.237174+00:00 web-02 sshd[24268]: Failed password for invalid user admin from 192.0.2.156 port 30755 ssh2",
+    "2026-11-11T15:16:01.215434+00:00 web-02 sshd[33637]: Failed password for invalid user admin from 192.0.2.156 port 49822 ssh2",
+    "2026-11-11T15:16:01.730368+00:00 web-02 sshd[10141]: Failed password for invalid user admin from 192.0.2.156 port 63102 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "57800c116d56",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "203.0.113.68 probed 15 distinct ports in under 60s (e.g. 53, 80, 135, 139, 443, 445, 993, 995, 1433, 3000...)",
+   "event_ts": "2026-11-11T15:15:34.365487+00:00",
+   "detected_at": "2026-11-11T15:15:34.465580+00:00",
+   "latency_ms": 100.1,
+   "src_ip": "203.0.113.68",
+   "host": "bastion",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:15:35.418369+00:00 bastion kernel: [81233.646848] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.68 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=59 ID=43635 PROTO=TCP SPT=63132 DPT=4532 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:15:35.593442+00:00 bastion kernel: [35965.262967] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.68 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=63 ID=29745 PROTO=TCP SPT=57879 DPT=1196 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:15:35.681532+00:00 bastion kernel: [80902.651520] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.68 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=40 ID=26951 PROTO=TCP SPT=33544 DPT=2869 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:15:35.826075+00:00 bastion kernel: [41217.381498] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.68 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=41 ID=29322 PROTO=TCP SPT=51486 DPT=3376 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:15:35.995763+00:00 bastion kernel: [79368.286035] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.68 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=48 ID=11775 PROTO=TCP SPT=43829 DPT=8737 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "21dfb0335592",
+   "rule_id": "web_attack.sqli",
+   "title": "SQL injection attempt",
+   "severity": "high",
+   "description": "GET /products?id=42%27%20OR%20%271%27%3D%271 from 192.0.2.131 (HTTP 500). Automated tool detected: sqlmap",
+   "event_ts": "2026-11-11T15:15:11.598000+00:00",
+   "detected_at": "2026-11-11T15:15:11.620779+00:00",
+   "latency_ms": 22.8,
+   "src_ip": "192.0.2.131",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T15:15:11.598000+00:00 web-01 nginx: 192.0.2.131 - - [11/Nov/2026:15:15:11 +0000] \"GET /products?id=42%27%20OR%20%271%27%3D%271 HTTP/1.1\" 500 6564 \"-\" \"sqlmap/1.8.11#stable (https://sqlmap.org)\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "46f0092b37ff",
+   "rule_id": "sudo_abuse.root_shell",
+   "title": "Root shell or sensitive file access via sudo",
+   "severity": "low",
+   "description": "User 'deploy' ran '/usr/bin/cat /etc/shadow' as root. Often legitimate admin work - verify it was expected.",
+   "event_ts": "2026-11-11T15:15:00.464542+00:00",
+   "detected_at": "2026-11-11T15:15:00.546584+00:00",
+   "latency_ms": 82.0,
+   "src_ip": null,
+   "host": "web-02",
+   "user": "deploy",
+   "count": 2,
+   "mitre": "T1548.003",
+   "evidence": [
+    "2026-11-11T15:15:00.464542+00:00 web-02 sudo[44417]:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow",
+    "2026-11-11T15:15:03.443068+00:00 web-02 sudo[18039]:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/bash"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "c2c61af78756",
+   "rule_id": "ssh_compromise",
+   "title": "Likely account compromise via SSH",
+   "severity": "critical",
+   "description": "User 'deploy' logged in from 198.51.100.178 right after 10 failed attempts from the same IP. Treat as compromised: lock the account and investigate.",
+   "event_ts": "2026-11-11T15:14:56.758401+00:00",
+   "detected_at": "2026-11-11T15:14:56.828581+00:00",
+   "latency_ms": 70.2,
+   "src_ip": "198.51.100.178",
+   "host": "web-02",
+   "user": "deploy",
+   "count": 11,
+   "mitre": "T1078",
+   "evidence": [
+    "2026-11-11T15:14:53.397991+00:00 web-02 sshd[52305]: Failed password for deploy from 198.51.100.178 port 63402 ssh2",
+    "2026-11-11T15:14:54.146938+00:00 web-02 sshd[14731]: Failed password for deploy from 198.51.100.178 port 53135 ssh2",
+    "2026-11-11T15:14:54.798607+00:00 web-02 sshd[7209]: Failed password for deploy from 198.51.100.178 port 62058 ssh2",
+    "2026-11-11T15:14:55.593654+00:00 web-02 sshd[64476]: Failed password for deploy from 198.51.100.178 port 63853 ssh2",
+    "2026-11-11T15:14:56.758401+00:00 web-02 sshd[26969]: Accepted password for deploy from 198.51.100.178 port 59410 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "616a52dc93d7",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 198.51.100.178 in under 60s against 1 account(s): deploy",
+   "event_ts": "2026-11-11T15:14:52.392690+00:00",
+   "detected_at": "2026-11-11T15:14:52.493061+00:00",
+   "latency_ms": 100.4,
+   "src_ip": "198.51.100.178",
+   "host": "web-02",
+   "user": null,
+   "count": 10,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:14:53.083838+00:00 web-02 sshd[52885]: Failed password for deploy from 198.51.100.178 port 46506 ssh2",
+    "2026-11-11T15:14:53.397991+00:00 web-02 sshd[52305]: Failed password for deploy from 198.51.100.178 port 63402 ssh2",
+    "2026-11-11T15:14:54.146938+00:00 web-02 sshd[14731]: Failed password for deploy from 198.51.100.178 port 53135 ssh2",
+    "2026-11-11T15:14:54.798607+00:00 web-02 sshd[7209]: Failed password for deploy from 198.51.100.178 port 62058 ssh2",
+    "2026-11-11T15:14:55.593654+00:00 web-02 sshd[64476]: Failed password for deploy from 198.51.100.178 port 63853 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "8f61d82df93b",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "198.51.100.226 probed 15 distinct ports in under 60s (e.g. 21, 22, 23, 25, 110, 135, 139, 143, 443, 1433...)",
+   "event_ts": "2026-11-11T15:14:29.823500+00:00",
+   "detected_at": "2026-11-11T15:14:29.852521+00:00",
+   "latency_ms": 29.0,
+   "src_ip": "198.51.100.226",
+   "host": "bastion",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:14:31.442795+00:00 bastion kernel: [65051.517587] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.226 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=61 ID=44261 PROTO=TCP SPT=59043 DPT=8517 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:14:31.651012+00:00 bastion kernel: [66680.131494] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.226 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=57 ID=29004 PROTO=TCP SPT=42423 DPT=6932 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:14:31.777822+00:00 bastion kernel: [97303.734252] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.226 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=56 ID=12828 PROTO=TCP SPT=39693 DPT=5680 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:14:31.933217+00:00 bastion kernel: [33654.783005] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.226 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=28567 PROTO=TCP SPT=45751 DPT=7622 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:14:32.010435+00:00 bastion kernel: [13006.804119] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.226 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=53 ID=20676 PROTO=TCP SPT=55873 DPT=3818 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "bc52207e3c9e",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 192.0.2.86 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T15:14:08.065292+00:00",
+   "detected_at": "2026-11-11T15:14:08.092785+00:00",
+   "latency_ms": 27.5,
+   "src_ip": "192.0.2.86",
+   "host": "web-02",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T15:14:07.684347+00:00 web-02 nginx: 192.0.2.86 - - [11/Nov/2026:15:14:07 +0000] \"GET /export HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:14:07.806047+00:00 web-02 nginx: 192.0.2.86 - - [11/Nov/2026:15:14:07 +0000] \"GET /test HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:14:07.854858+00:00 web-02 nginx: 192.0.2.86 - - [11/Nov/2026:15:14:07 +0000] \"GET /db HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:14:07.919673+00:00 web-02 nginx: 192.0.2.86 - - [11/Nov/2026:15:14:07 +0000] \"GET /dashboard HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:14:08.065292+00:00 web-02 nginx: 192.0.2.86 - - [11/Nov/2026:15:14:08 +0000] \"GET /panel HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "30b21ab21b3a",
+   "rule_id": "web_attack.sqli",
+   "title": "SQL injection attempt",
+   "severity": "high",
+   "description": "GET /products?id=42%27%20OR%20%271%27%3D%271 from 203.0.113.85 (HTTP 200, server returned success - check the app). Automated tool detected: sqlmap",
+   "event_ts": "2026-11-11T15:13:47.215907+00:00",
+   "detected_at": "2026-11-11T15:13:47.245459+00:00",
+   "latency_ms": 29.6,
+   "src_ip": "203.0.113.85",
+   "host": "web-02",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T15:13:47.215907+00:00 web-02 nginx: 203.0.113.85 - - [11/Nov/2026:15:13:47 +0000] \"GET /products?id=42%27%20OR%20%271%27%3D%271 HTTP/1.1\" 200 14092 \"-\" \"sqlmap/1.8.11#stable (https://sqlmap.org)\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "aeaf176a1605",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 203.0.113.111 in under 60s against 1 account(s): root",
+   "event_ts": "2026-11-11T15:13:35.273482+00:00",
+   "detected_at": "2026-11-11T15:13:35.359390+00:00",
+   "latency_ms": 85.9,
+   "src_ip": "203.0.113.111",
+   "host": "web-01",
+   "user": null,
+   "count": 15,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:13:40.068681+00:00 web-01 sshd[10806]: Failed password for root from 203.0.113.111 port 64684 ssh2",
+    "2026-11-11T15:13:40.981929+00:00 web-01 sshd[19980]: Failed password for root from 203.0.113.111 port 60091 ssh2",
+    "2026-11-11T15:13:41.300369+00:00 web-01 sshd[2141]: Failed password for root from 203.0.113.111 port 43553 ssh2",
+    "2026-11-11T15:13:42.313051+00:00 web-01 sshd[25734]: Failed password for root from 203.0.113.111 port 42680 ssh2",
+    "2026-11-11T15:13:42.838689+00:00 web-01 sshd[31743]: Failed password for root from 203.0.113.111 port 62880 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "56aa2925f53e",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH password spraying",
+   "severity": "high",
+   "description": "5 failed SSH logins from 203.0.113.24 in under 60s against 5 account(s): ftpuser, guest, pi, postgres, root",
+   "event_ts": "2026-11-11T15:13:26.035065+00:00",
+   "detected_at": "2026-11-11T15:13:26.084312+00:00",
+   "latency_ms": 49.2,
+   "src_ip": "203.0.113.24",
+   "host": "bastion",
+   "user": null,
+   "count": 5,
+   "mitre": "T1110.003",
+   "evidence": [
+    "2026-11-11T15:13:22.759994+00:00 bastion sshd[25505]: Failed password for invalid user pi from 203.0.113.24 port 45464 ssh2",
+    "2026-11-11T15:13:23.717638+00:00 bastion sshd[48668]: Failed password for root from 203.0.113.24 port 36629 ssh2",
+    "2026-11-11T15:13:24.536804+00:00 bastion sshd[34415]: Failed password for invalid user guest from 203.0.113.24 port 52505 ssh2",
+    "2026-11-11T15:13:25.275602+00:00 bastion sshd[21406]: Failed password for invalid user postgres from 203.0.113.24 port 32229 ssh2",
+    "2026-11-11T15:13:26.035065+00:00 bastion sshd[26107]: Failed password for invalid user ftpuser from 203.0.113.24 port 32226 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "61d67983ec07",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "198.51.100.2 probed 15 distinct ports in under 60s (e.g. 23, 110, 111, 139, 443, 445, 1433, 1723, 2049, 3000...)",
+   "event_ts": "2026-11-11T15:13:04.976955+00:00",
+   "detected_at": "2026-11-11T15:13:05.047162+00:00",
+   "latency_ms": 70.2,
+   "src_ip": "198.51.100.2",
+   "host": "bastion",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:13:06.615825+00:00 bastion kernel: [63318.869266] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.2 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=62 ID=14383 PROTO=TCP SPT=31907 DPT=3353 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:13:06.665024+00:00 bastion kernel: [72718.896424] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.2 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=41 ID=22527 PROTO=TCP SPT=45749 DPT=3319 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:13:06.816376+00:00 bastion kernel: [42270.906068] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.2 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=59723 PROTO=TCP SPT=33752 DPT=5643 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:13:07.022368+00:00 bastion kernel: [75102.272756] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.2 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=61 ID=41470 PROTO=TCP SPT=44293 DPT=6698 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:13:07.266149+00:00 bastion kernel: [76644.436265] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.2 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=63 ID=44302 PROTO=TCP SPT=48043 DPT=8183 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "d44d4b0dbb0f",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 203.0.113.16 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T15:12:47.898620+00:00",
+   "detected_at": "2026-11-11T15:12:47.931814+00:00",
+   "latency_ms": 33.2,
+   "src_ip": "203.0.113.16",
+   "host": "web-01",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T15:12:47.433676+00:00 web-01 nginx: 203.0.113.16 - - [11/Nov/2026:15:12:47 +0000] \"GET /logs HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:12:47.531485+00:00 web-01 nginx: 203.0.113.16 - - [11/Nov/2026:15:12:47 +0000] \"GET /dashboard HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:12:47.730647+00:00 web-01 nginx: 203.0.113.16 - - [11/Nov/2026:15:12:47 +0000] \"GET /db HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:12:47.860789+00:00 web-01 nginx: 203.0.113.16 - - [11/Nov/2026:15:12:47 +0000] \"GET /manager HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:12:47.898620+00:00 web-01 nginx: 203.0.113.16 - - [11/Nov/2026:15:12:47 +0000] \"GET /api/v2 HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "d532b7e69fbb",
+   "rule_id": "web_attack.sensitive",
+   "title": "Sensitive file probe",
+   "severity": "medium",
+   "description": "GET /.env from 198.51.100.118 (HTTP 404)",
+   "event_ts": "2026-11-11T15:12:32.947610+00:00",
+   "detected_at": "2026-11-11T15:12:33.031154+00:00",
+   "latency_ms": 83.5,
+   "src_ip": "198.51.100.118",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1552.001",
+   "evidence": [
+    "2026-11-11T15:12:32.947610+00:00 web-01 nginx: 198.51.100.118 - - [11/Nov/2026:15:12:32 +0000] \"GET /.env HTTP/1.1\" 404 8183 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "4c15ba3520e4",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /static/..%2F..%2F..%2Fetc%2Fpasswd from 198.51.100.118 (HTTP 404)",
+   "event_ts": "2026-11-11T15:12:30.709002+00:00",
+   "detected_at": "2026-11-11T15:12:30.711039+00:00",
+   "latency_ms": 2.0,
+   "src_ip": "198.51.100.118",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T15:12:30.709002+00:00 web-01 nginx: 198.51.100.118 - - [11/Nov/2026:15:12:30 +0000] \"GET /static/..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1\" 404 724 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "c592d225c5d3",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "192.0.2.152 probed 15 distinct ports in under 60s (e.g. 21, 25, 53, 80, 110, 111, 135, 445, 1433, 1723...)",
+   "event_ts": "2026-11-11T15:12:16.238496+00:00",
+   "detected_at": "2026-11-11T15:12:16.314973+00:00",
+   "latency_ms": 76.5,
+   "src_ip": "192.0.2.152",
+   "host": "web-02",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:12:17.914197+00:00 web-02 kernel: [67204.374299] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.152 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=42 ID=35346 PROTO=TCP SPT=47262 DPT=5111 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:12:17.947541+00:00 web-02 kernel: [63791.600972] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.152 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=62 ID=3959 PROTO=TCP SPT=56716 DPT=4995 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:12:18.069647+00:00 web-02 kernel: [38014.406138] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.152 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=42 ID=50265 PROTO=TCP SPT=50022 DPT=8709 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:12:18.248518+00:00 web-02 kernel: [96991.216859] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.152 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=46 ID=13817 PROTO=TCP SPT=39413 DPT=6024 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:12:18.309509+00:00 web-02 kernel: [88813.477623] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.152 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=58 ID=40956 PROTO=TCP SPT=31023 DPT=9852 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "899ff66038ee",
+   "rule_id": "web_attack.sensitive",
+   "title": "Sensitive file probe",
+   "severity": "medium",
+   "description": "GET /.env from 192.0.2.94 (HTTP 400)",
+   "event_ts": "2026-11-11T15:11:55.774879+00:00",
+   "detected_at": "2026-11-11T15:11:55.776257+00:00",
+   "latency_ms": 1.4,
+   "src_ip": "192.0.2.94",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1552.001",
+   "evidence": [
+    "2026-11-11T15:11:55.774879+00:00 web-01 nginx: 192.0.2.94 - - [11/Nov/2026:15:11:55 +0000] \"GET /.env HTTP/1.1\" 400 4854 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "5466ed4a893e",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /static/..%2F..%2F..%2Fetc%2Fpasswd from 192.0.2.94 (HTTP 400)",
+   "event_ts": "2026-11-11T15:11:54.089542+00:00",
+   "detected_at": "2026-11-11T15:11:54.165094+00:00",
+   "latency_ms": 75.6,
+   "src_ip": "192.0.2.94",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T15:11:54.089542+00:00 web-01 nginx: 192.0.2.94 - - [11/Nov/2026:15:11:54 +0000] \"GET /static/..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1\" 400 13353 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "a3e74f04323c",
+   "rule_id": "sudo_abuse.service_account",
+   "title": "Service account used sudo",
+   "severity": "critical",
+   "description": "Service account 'www-data' ran '/bin/bash -i' as root. Web/database accounts should never do this - possible web shell or exploited service.",
+   "event_ts": "2026-11-11T15:11:51.211132+00:00",
+   "detected_at": "2026-11-11T15:11:51.245633+00:00",
+   "latency_ms": 34.5,
+   "src_ip": null,
+   "host": "web-01",
+   "user": "www-data",
+   "count": 1,
+   "mitre": "T1548.003",
+   "evidence": [
+    "2026-11-11T15:11:51.211132+00:00 web-01 sudo[5654]:    www-data : TTY=pts/0 ; PWD=/var/www/html ; USER=root ; COMMAND=/bin/bash -i"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "b3424b31f355",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd from 192.0.2.103 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T15:11:47.565293+00:00",
+   "detected_at": "2026-11-11T15:11:47.625580+00:00",
+   "latency_ms": 60.3,
+   "src_ip": "192.0.2.103",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T15:11:47.565293+00:00 web-01 nginx: 192.0.2.103 - - [11/Nov/2026:15:11:47 +0000] \"GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd HTTP/1.1\" 200 7473 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "f4236fc697a7",
+   "rule_id": "web_attack.cmdi",
+   "title": "Command injection attempt",
+   "severity": "critical",
+   "description": "GET /api/v1/ping?host=127.0.0.1%3Bid from 192.0.2.103 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T15:11:46.032171+00:00",
+   "detected_at": "2026-11-11T15:11:46.116550+00:00",
+   "latency_ms": 84.4,
+   "src_ip": "192.0.2.103",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1059",
+   "evidence": [
+    "2026-11-11T15:11:46.032171+00:00 web-01 nginx: 192.0.2.103 - - [11/Nov/2026:15:11:46 +0000] \"GET /api/v1/ping?host=127.0.0.1%3Bid HTTP/1.1\" 200 1945 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "202fd9ff2edf",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 203.0.113.226 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T15:11:33.593532+00:00",
+   "detected_at": "2026-11-11T15:11:33.648304+00:00",
+   "latency_ms": 54.8,
+   "src_ip": "203.0.113.226",
+   "host": "web-01",
+   "user": null,
+   "count": 10,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:11:33.993892+00:00 web-01 sshd[29068]: Failed password for invalid user admin from 203.0.113.226 port 63954 ssh2",
+    "2026-11-11T15:11:34.866066+00:00 web-01 sshd[29714]: Failed password for invalid user admin from 203.0.113.226 port 41920 ssh2",
+    "2026-11-11T15:11:35.976324+00:00 web-01 sshd[21380]: Failed password for invalid user admin from 203.0.113.226 port 32279 ssh2",
+    "2026-11-11T15:11:36.939193+00:00 web-01 sshd[34862]: Failed password for invalid user admin from 203.0.113.226 port 34724 ssh2",
+    "2026-11-11T15:11:37.275805+00:00 web-01 sshd[57402]: Failed password for invalid user admin from 203.0.113.226 port 30169 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "ca202b964501",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.14 in under 60s against 1 account(s): ubuntu",
+   "event_ts": "2026-11-11T15:11:13.381253+00:00",
+   "detected_at": "2026-11-11T15:11:13.431964+00:00",
+   "latency_ms": 50.7,
+   "src_ip": "192.0.2.14",
+   "host": "web-02",
+   "user": null,
+   "count": 10,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:11:13.920503+00:00 web-02 sshd[36054]: Failed password for ubuntu from 192.0.2.14 port 33256 ssh2",
+    "2026-11-11T15:11:15.088934+00:00 web-02 sshd[5243]: Failed password for ubuntu from 192.0.2.14 port 63881 ssh2",
+    "2026-11-11T15:11:15.845321+00:00 web-02 sshd[45218]: Failed password for ubuntu from 192.0.2.14 port 48432 ssh2",
+    "2026-11-11T15:11:16.887829+00:00 web-02 sshd[33219]: Failed password for ubuntu from 192.0.2.14 port 57748 ssh2",
+    "2026-11-11T15:11:17.736176+00:00 web-02 sshd[51890]: Failed password for ubuntu from 192.0.2.14 port 44833 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "28849242f0b9",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.186 in under 60s against 1 account(s): ubuntu",
+   "event_ts": "2026-11-11T15:11:01.961834+00:00",
+   "detected_at": "2026-11-11T15:11:02.058433+00:00",
+   "latency_ms": 96.6,
+   "src_ip": "192.0.2.186",
+   "host": "web-01",
+   "user": null,
+   "count": 10,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:11:03.135616+00:00 web-01 sshd[7906]: Failed password for ubuntu from 192.0.2.186 port 49434 ssh2",
+    "2026-11-11T15:11:03.880902+00:00 web-01 sshd[7534]: Failed password for ubuntu from 192.0.2.186 port 41161 ssh2",
+    "2026-11-11T15:11:04.539476+00:00 web-01 sshd[19403]: Failed password for ubuntu from 192.0.2.186 port 58458 ssh2",
+    "2026-11-11T15:11:05.044837+00:00 web-01 sshd[15105]: Failed password for ubuntu from 192.0.2.186 port 57603 ssh2",
+    "2026-11-11T15:11:06.111046+00:00 web-01 sshd[41934]: Failed password for ubuntu from 192.0.2.186 port 52995 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "297afb9fdac8",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH password spraying",
+   "severity": "high",
+   "description": "5 failed SSH logins from 203.0.113.247 in under 60s against 5 account(s): admin, oracle, support, test, ubnt",
+   "event_ts": "2026-11-11T15:10:41.244451+00:00",
+   "detected_at": "2026-11-11T15:10:41.320402+00:00",
+   "latency_ms": 76.0,
+   "src_ip": "203.0.113.247",
+   "host": "web-01",
+   "user": null,
+   "count": 5,
+   "mitre": "T1110.003",
+   "evidence": [
+    "2026-11-11T15:10:37.830028+00:00 web-01 sshd[43215]: Failed password for invalid user oracle from 203.0.113.247 port 58738 ssh2",
+    "2026-11-11T15:10:38.889410+00:00 web-01 sshd[8809]: Failed password for invalid user admin from 203.0.113.247 port 39527 ssh2",
+    "2026-11-11T15:10:39.678526+00:00 web-01 sshd[59251]: Failed password for invalid user test from 203.0.113.247 port 30752 ssh2",
+    "2026-11-11T15:10:40.597005+00:00 web-01 sshd[42700]: Failed password for invalid user support from 203.0.113.247 port 59306 ssh2",
+    "2026-11-11T15:10:41.244451+00:00 web-01 sshd[21996]: Failed password for invalid user ubnt from 203.0.113.247 port 31973 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "8096ecccce97",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 192.0.2.204 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T15:10:25.689195+00:00",
+   "detected_at": "2026-11-11T15:10:25.717063+00:00",
+   "latency_ms": 27.9,
+   "src_ip": "192.0.2.204",
+   "host": "web-02",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T15:10:25.267863+00:00 web-02 nginx: 192.0.2.204 - - [11/Nov/2026:15:10:25 +0000] \"GET /test HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:10:25.360326+00:00 web-02 nginx: 192.0.2.204 - - [11/Nov/2026:15:10:25 +0000] \"GET /shell HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:10:25.452863+00:00 web-02 nginx: 192.0.2.204 - - [11/Nov/2026:15:10:25 +0000] \"GET /backup HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:10:25.548127+00:00 web-02 nginx: 192.0.2.204 - - [11/Nov/2026:15:10:25 +0000] \"GET /logs HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:10:25.689195+00:00 web-02 nginx: 192.0.2.204 - - [11/Nov/2026:15:10:25 +0000] \"GET /api/v2 HTTP/1.1\" 403 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "78e352cd22ed",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 192.0.2.104 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T15:10:15.109673+00:00",
+   "detected_at": "2026-11-11T15:10:15.184286+00:00",
+   "latency_ms": 74.6,
+   "src_ip": "192.0.2.104",
+   "host": "web-01",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T15:10:14.743635+00:00 web-01 nginx: 192.0.2.104 - - [11/Nov/2026:15:10:14 +0000] \"GET /admin HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:10:14.897927+00:00 web-01 nginx: 192.0.2.104 - - [11/Nov/2026:15:10:14 +0000] \"GET /dev HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:10:14.966372+00:00 web-01 nginx: 192.0.2.104 - - [11/Nov/2026:15:10:14 +0000] \"GET /wp-admin HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:10:15.034700+00:00 web-01 nginx: 192.0.2.104 - - [11/Nov/2026:15:10:15 +0000] \"GET /staging HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:10:15.109673+00:00 web-01 nginx: 192.0.2.104 - - [11/Nov/2026:15:10:15 +0000] \"GET /old HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "c3ac42e37ba4",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 203.0.113.35 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T15:10:07.444289+00:00",
+   "detected_at": "2026-11-11T15:10:07.522300+00:00",
+   "latency_ms": 78.0,
+   "src_ip": "203.0.113.35",
+   "host": "web-02",
+   "user": null,
+   "count": 5,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:10:04.651613+00:00 web-02 sshd[40509]: Failed password for invalid user admin from 203.0.113.35 port 39163 ssh2",
+    "2026-11-11T15:10:05.324169+00:00 web-02 sshd[17724]: Failed password for invalid user admin from 203.0.113.35 port 62825 ssh2",
+    "2026-11-11T15:10:06.215318+00:00 web-02 sshd[34310]: Failed password for invalid user admin from 203.0.113.35 port 36932 ssh2",
+    "2026-11-11T15:10:06.844298+00:00 web-02 sshd[13251]: Failed password for invalid user admin from 203.0.113.35 port 36671 ssh2",
+    "2026-11-11T15:10:07.444289+00:00 web-02 sshd[11609]: Failed password for invalid user admin from 203.0.113.35 port 39843 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "c84ef7e6ccce",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "203.0.113.244 probed 15 distinct ports in under 60s (e.g. 23, 110, 111, 139, 143, 443, 995, 1521, 1723, 3000...)",
+   "event_ts": "2026-11-11T15:09:52.342133+00:00",
+   "detected_at": "2026-11-11T15:09:52.421347+00:00",
+   "latency_ms": 79.2,
+   "src_ip": "203.0.113.244",
+   "host": "web-01",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:09:53.884386+00:00 web-01 kernel: [24798.242129] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.244 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=45 ID=15893 PROTO=TCP SPT=34312 DPT=1080 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:09:54.084390+00:00 web-01 kernel: [50285.737311] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.244 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=58 ID=27571 PROTO=TCP SPT=58651 DPT=5677 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:09:54.327060+00:00 web-01 kernel: [73962.478880] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.244 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=48 ID=49835 PROTO=TCP SPT=41025 DPT=8144 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:09:54.372945+00:00 web-01 kernel: [79401.549172] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.244 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=40 ID=52056 PROTO=TCP SPT=58813 DPT=2801 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:09:54.533551+00:00 web-01 kernel: [62679.646796] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.244 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=55 ID=2706 PROTO=TCP SPT=37541 DPT=7835 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "e80995c8eab1",
+   "rule_id": "sudo_abuse.denied",
+   "title": "Unauthorized sudo attempt",
+   "severity": "medium",
+   "description": "User 'intern' tried to run '/usr/bin/cat /etc/shadow' as root but is not allowed to use sudo",
+   "event_ts": "2026-11-11T15:09:38.737474+00:00",
+   "detected_at": "2026-11-11T15:09:38.825625+00:00",
+   "latency_ms": 88.2,
+   "src_ip": null,
+   "host": "bastion",
+   "user": "intern",
+   "count": 1,
+   "mitre": "T1548.003",
+   "evidence": [
+    "2026-11-11T15:09:38.737474+00:00 bastion sudo[16649]:    intern : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/intern ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "2213c05aacf9",
+   "rule_id": "web_attack.sqli",
+   "title": "SQL injection attempt",
+   "severity": "high",
+   "description": "GET /products?id=42%27%20OR%20%271%27%3D%271 from 192.0.2.22 (HTTP 200, server returned success - check the app). Automated tool detected: sqlmap",
+   "event_ts": "2026-11-11T15:09:20.304354+00:00",
+   "detected_at": "2026-11-11T15:09:20.323559+00:00",
+   "latency_ms": 19.2,
+   "src_ip": "192.0.2.22",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T15:09:20.304354+00:00 web-01 nginx: 192.0.2.22 - - [11/Nov/2026:15:09:20 +0000] \"GET /products?id=42%27%20OR%20%271%27%3D%271 HTTP/1.1\" 200 14194 \"-\" \"sqlmap/1.8.11#stable (https://sqlmap.org)\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "32c91edff940",
+   "rule_id": "web_attack.sensitive",
+   "title": "Sensitive file probe",
+   "severity": "medium",
+   "description": "GET /.env from 198.51.100.127 (HTTP 404)",
+   "event_ts": "2026-11-11T15:09:14.424524+00:00",
+   "detected_at": "2026-11-11T15:09:14.485096+00:00",
+   "latency_ms": 60.6,
+   "src_ip": "198.51.100.127",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1552.001",
+   "evidence": [
+    "2026-11-11T15:09:14.424524+00:00 web-01 nginx: 198.51.100.127 - - [11/Nov/2026:15:09:14 +0000] \"GET /.env HTTP/1.1\" 404 11638 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "7540444d72d4",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /static/..%2F..%2F..%2Fetc%2Fpasswd from 198.51.100.127 (HTTP 404)",
+   "event_ts": "2026-11-11T15:09:12.206394+00:00",
+   "detected_at": "2026-11-11T15:09:12.270990+00:00",
+   "latency_ms": 64.6,
+   "src_ip": "198.51.100.127",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T15:09:12.206394+00:00 web-01 nginx: 198.51.100.127 - - [11/Nov/2026:15:09:12 +0000] \"GET /static/..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1\" 404 13054 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "c3856ad2c55d",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "198.51.100.245 probed 15 distinct ports in under 60s (e.g. 22, 23, 25, 111, 139, 143, 445, 993, 995, 1521...)",
+   "event_ts": "2026-11-11T15:08:57.458928+00:00",
+   "detected_at": "2026-11-11T15:08:57.464617+00:00",
+   "latency_ms": 5.7,
+   "src_ip": "198.51.100.245",
+   "host": "web-02",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:08:58.743099+00:00 web-02 kernel: [28179.527810] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.245 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=33832 PROTO=TCP SPT=47439 DPT=3229 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:58.796280+00:00 web-02 kernel: [92028.423044] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.245 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=54 ID=55460 PROTO=TCP SPT=35305 DPT=7190 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:58.988469+00:00 web-02 kernel: [80834.640157] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.245 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=27925 PROTO=TCP SPT=62152 DPT=4187 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:59.116978+00:00 web-02 kernel: [36786.902382] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.245 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=51 ID=25206 PROTO=TCP SPT=50331 DPT=9156 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:59.277721+00:00 web-02 kernel: [84318.625489] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.245 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=28196 PROTO=TCP SPT=37412 DPT=6749 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "2d41a3eb7266",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "203.0.113.75 probed 15 distinct ports in under 60s (e.g. 53, 111, 139, 443, 995, 1433, 1521, 1723, 3389, 5432...)",
+   "event_ts": "2026-11-11T15:08:36.750793+00:00",
+   "detected_at": "2026-11-11T15:08:36.804530+00:00",
+   "latency_ms": 53.7,
+   "src_ip": "203.0.113.75",
+   "host": "web-02",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:08:38.157259+00:00 web-02 kernel: [16328.670912] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.75 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=48 ID=46633 PROTO=TCP SPT=35859 DPT=7751 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:38.297759+00:00 web-02 kernel: [98209.992101] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.75 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=49 ID=9458 PROTO=TCP SPT=30742 DPT=9121 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:38.340924+00:00 web-02 kernel: [51069.404304] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.75 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=63 ID=7459 PROTO=TCP SPT=40824 DPT=6354 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:38.530618+00:00 web-02 kernel: [50014.352378] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.75 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=56 ID=8702 PROTO=TCP SPT=47087 DPT=8083 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:38.776610+00:00 web-02 kernel: [55157.631769] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.75 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=43 ID=40922 PROTO=TCP SPT=34228 DPT=1207 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "5fca307d0b63",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.152 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T15:08:22.855526+00:00",
+   "detected_at": "2026-11-11T15:08:22.900302+00:00",
+   "latency_ms": 44.8,
+   "src_ip": "192.0.2.152",
+   "host": "bastion",
+   "user": null,
+   "count": 15,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:08:26.200128+00:00 bastion sshd[21016]: Failed password for invalid user admin from 192.0.2.152 port 61118 ssh2",
+    "2026-11-11T15:08:26.522439+00:00 bastion sshd[42873]: Failed password for invalid user admin from 192.0.2.152 port 32441 ssh2",
+    "2026-11-11T15:08:27.081125+00:00 bastion sshd[36277]: Failed password for invalid user admin from 192.0.2.152 port 64083 ssh2",
+    "2026-11-11T15:08:27.647362+00:00 bastion sshd[10454]: Failed password for invalid user admin from 192.0.2.152 port 52894 ssh2",
+    "2026-11-11T15:08:28.193371+00:00 bastion sshd[14609]: Failed password for invalid user admin from 192.0.2.152 port 56331 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "4aa4c4ecf339",
+   "rule_id": "web_attack.sensitive",
+   "title": "Sensitive file probe",
+   "severity": "medium",
+   "description": "GET /.env from 198.51.100.194 (HTTP 403)",
+   "event_ts": "2026-11-11T15:08:14.270724+00:00",
+   "detected_at": "2026-11-11T15:08:14.345266+00:00",
+   "latency_ms": 74.5,
+   "src_ip": "198.51.100.194",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1552.001",
+   "evidence": [
+    "2026-11-11T15:08:14.270724+00:00 web-01 nginx: 198.51.100.194 - - [11/Nov/2026:15:08:14 +0000] \"GET /.env HTTP/1.1\" 403 4387 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "1ec4499c5bc7",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /static/..%2F..%2F..%2Fetc%2Fpasswd from 198.51.100.194 (HTTP 400)",
+   "event_ts": "2026-11-11T15:08:12.349006+00:00",
+   "detected_at": "2026-11-11T15:08:12.433047+00:00",
+   "latency_ms": 84.0,
+   "src_ip": "198.51.100.194",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T15:08:12.349006+00:00 web-01 nginx: 198.51.100.194 - - [11/Nov/2026:15:08:12 +0000] \"GET /static/..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1\" 400 10074 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "cffbf6bffac0",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "198.51.100.90 probed 15 distinct ports in under 60s (e.g. 22, 23, 135, 139, 993, 995, 1433, 2049, 3389, 4668...)",
+   "event_ts": "2026-11-11T15:08:04.950660+00:00",
+   "detected_at": "2026-11-11T15:08:04.969950+00:00",
+   "latency_ms": 19.3,
+   "src_ip": "198.51.100.90",
+   "host": "web-01",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:08:06.233623+00:00 web-01 kernel: [36883.428620] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.90 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=47 ID=37492 PROTO=TCP SPT=49681 DPT=9659 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:06.313953+00:00 web-01 kernel: [80322.825067] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.90 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=41 ID=15531 PROTO=TCP SPT=53849 DPT=2468 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:06.443306+00:00 web-01 kernel: [86327.399868] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.90 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=44 ID=14519 PROTO=TCP SPT=36202 DPT=1714 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:06.543712+00:00 web-01 kernel: [44825.482004] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.90 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=59 ID=26405 PROTO=TCP SPT=47144 DPT=9444 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:08:06.622637+00:00 web-01 kernel: [19740.173825] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.90 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=63 ID=1108 PROTO=TCP SPT=48973 DPT=4513 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "bf048610c3e3",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "198.51.100.105 probed 15 distinct ports in under 60s (e.g. 21, 22, 23, 25, 53, 110, 139, 143, 1433, 1521...)",
+   "event_ts": "2026-11-11T15:07:30.367674+00:00",
+   "detected_at": "2026-11-11T15:07:30.433835+00:00",
+   "latency_ms": 66.2,
+   "src_ip": "198.51.100.105",
+   "host": "bastion",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:07:31.571832+00:00 bastion kernel: [77274.972366] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.105 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=44 ID=42558 PROTO=TCP SPT=44268 DPT=7688 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:07:31.755615+00:00 bastion kernel: [83120.974661] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.105 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=53 ID=47953 PROTO=TCP SPT=32049 DPT=3343 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:07:31.863454+00:00 bastion kernel: [10161.794608] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.105 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=61 ID=20852 PROTO=TCP SPT=33376 DPT=1664 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:07:31.970745+00:00 bastion kernel: [54391.792386] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.105 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=46 ID=30513 PROTO=TCP SPT=31585 DPT=2255 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:07:32.029434+00:00 bastion kernel: [25804.244610] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.105 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=46 ID=12501 PROTO=TCP SPT=52731 DPT=3386 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "af7d0d957e8a",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "198.51.100.90 probed 15 distinct ports in under 60s (e.g. 21, 23, 25, 53, 110, 143, 445, 993, 995, 5432...)",
+   "event_ts": "2026-11-11T15:07:12.868332+00:00",
+   "detected_at": "2026-11-11T15:07:12.890765+00:00",
+   "latency_ms": 22.4,
+   "src_ip": "198.51.100.90",
+   "host": "web-02",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:07:13.943274+00:00 web-02 kernel: [80820.351849] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.90 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=61 ID=1524 PROTO=TCP SPT=64780 DPT=6548 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:07:14.108335+00:00 web-02 kernel: [23293.666378] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.90 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=58 ID=60147 PROTO=TCP SPT=34911 DPT=3200 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:07:14.342985+00:00 web-02 kernel: [57325.157250] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.90 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=53 ID=32023 PROTO=TCP SPT=42306 DPT=9155 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:07:14.407621+00:00 web-02 kernel: [90716.431535] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.90 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=57 ID=14451 PROTO=TCP SPT=45694 DPT=7515 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:07:14.557600+00:00 web-02 kernel: [38779.816508] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.90 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=64 ID=33590 PROTO=TCP SPT=41113 DPT=3417 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "5fd9decb5b9b",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.177 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T15:06:55.987157+00:00",
+   "detected_at": "2026-11-11T15:06:55.991422+00:00",
+   "latency_ms": 4.3,
+   "src_ip": "192.0.2.177",
+   "host": "web-01",
+   "user": null,
+   "count": 15,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:07:00.115350+00:00 web-01 sshd[41559]: Failed password for invalid user admin from 192.0.2.177 port 41538 ssh2",
+    "2026-11-11T15:07:00.824147+00:00 web-01 sshd[10111]: Failed password for invalid user admin from 192.0.2.177 port 30299 ssh2",
+    "2026-11-11T15:07:01.619905+00:00 web-01 sshd[42068]: Failed password for invalid user admin from 192.0.2.177 port 31984 ssh2",
+    "2026-11-11T15:07:02.068574+00:00 web-01 sshd[37053]: Failed password for invalid user admin from 192.0.2.177 port 52646 ssh2",
+    "2026-11-11T15:07:02.564999+00:00 web-01 sshd[5985]: Failed password for invalid user admin from 192.0.2.177 port 41292 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "2b141f2d13ab",
+   "rule_id": "web_attack.xss",
+   "title": "Cross-site scripting attempt",
+   "severity": "medium",
+   "description": "GET /search?q=%3Cscript%3Ealert(1)%3C%2Fscript%3E from 203.0.113.213 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T15:06:39.466819+00:00",
+   "detected_at": "2026-11-11T15:06:39.478631+00:00",
+   "latency_ms": 11.8,
+   "src_ip": "203.0.113.213",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T15:06:39.466819+00:00 web-01 nginx: 203.0.113.213 - - [11/Nov/2026:15:06:39 +0000] \"GET /search?q=%3Cscript%3Ealert(1)%3C%2Fscript%3E HTTP/1.1\" 200 14568 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "c71a4192324f",
+   "rule_id": "web_attack.sqli",
+   "title": "SQL injection attempt",
+   "severity": "high",
+   "description": "GET /products?id=42%27%20OR%20%271%27%3D%271 from 203.0.113.234 (HTTP 200, server returned success - check the app). Automated tool detected: sqlmap",
+   "event_ts": "2026-11-11T15:06:28.588669+00:00",
+   "detected_at": "2026-11-11T15:06:28.592268+00:00",
+   "latency_ms": 3.6,
+   "src_ip": "203.0.113.234",
+   "host": "web-02",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T15:06:28.588669+00:00 web-02 nginx: 203.0.113.234 - - [11/Nov/2026:15:06:28 +0000] \"GET /products?id=42%27%20OR%20%271%27%3D%271 HTTP/1.1\" 200 9901 \"-\" \"sqlmap/1.8.11#stable (https://sqlmap.org)\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "50245b2d71c7",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "203.0.113.141 probed 15 distinct ports in under 60s (e.g. 21, 22, 53, 80, 995, 1521, 1723, 3306, 3389, 5432...)",
+   "event_ts": "2026-11-11T15:06:20.181119+00:00",
+   "detected_at": "2026-11-11T15:06:20.213763+00:00",
+   "latency_ms": 32.6,
+   "src_ip": "203.0.113.141",
+   "host": "web-01",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:06:21.361709+00:00 web-01 kernel: [87569.508141] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.141 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=41 ID=18468 PROTO=TCP SPT=31548 DPT=3972 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:21.442929+00:00 web-01 kernel: [91741.114306] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.141 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=56 ID=35620 PROTO=TCP SPT=51134 DPT=9399 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:21.519996+00:00 web-01 kernel: [77773.122845] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.141 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=41 ID=22837 PROTO=TCP SPT=56490 DPT=6742 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:21.583340+00:00 web-01 kernel: [95858.268137] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.141 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=11542 PROTO=TCP SPT=33613 DPT=9796 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:21.696113+00:00 web-01 kernel: [66041.541878] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.141 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=50 ID=51492 PROTO=TCP SPT=57079 DPT=6912 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "c4969b61adce",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "198.51.100.240 probed 15 distinct ports in under 60s (e.g. 21, 23, 80, 111, 143, 445, 995, 1433, 1723, 2049...)",
+   "event_ts": "2026-11-11T15:06:11.221458+00:00",
+   "detected_at": "2026-11-11T15:06:11.230787+00:00",
+   "latency_ms": 9.3,
+   "src_ip": "198.51.100.240",
+   "host": "web-01",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:06:12.834073+00:00 web-01 kernel: [18753.146893] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.240 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=40 ID=11125 PROTO=TCP SPT=61564 DPT=3247 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:13.077632+00:00 web-01 kernel: [90722.312427] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.240 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=61239 PROTO=TCP SPT=37936 DPT=7622 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:13.284072+00:00 web-01 kernel: [98774.688919] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.240 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=49 ID=12264 PROTO=TCP SPT=62933 DPT=5477 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:13.503360+00:00 web-01 kernel: [62373.259733] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.240 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=45 ID=46729 PROTO=TCP SPT=42070 DPT=2074 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:13.526266+00:00 web-01 kernel: [72888.632755] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.240 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=34733 PROTO=TCP SPT=62825 DPT=1218 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "515233ce7bd5",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "203.0.113.110 probed 15 distinct ports in under 60s (e.g. 21, 25, 110, 111, 139, 993, 995, 1433, 3000, 3306...)",
+   "event_ts": "2026-11-11T15:06:00.116930+00:00",
+   "detected_at": "2026-11-11T15:06:00.124676+00:00",
+   "latency_ms": 7.7,
+   "src_ip": "203.0.113.110",
+   "host": "bastion",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:06:01.540605+00:00 bastion kernel: [26052.839977] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.110 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=50 ID=45514 PROTO=TCP SPT=45715 DPT=4756 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:01.639200+00:00 bastion kernel: [76534.724511] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.110 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=26147 PROTO=TCP SPT=48315 DPT=8899 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:01.854737+00:00 bastion kernel: [37937.754242] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.110 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=42 ID=51647 PROTO=TCP SPT=44670 DPT=3089 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:02.063388+00:00 bastion kernel: [97559.805517] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.110 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=52945 PROTO=TCP SPT=58933 DPT=5431 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:06:02.123506+00:00 bastion kernel: [68079.506989] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.110 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=56 ID=41904 PROTO=TCP SPT=50339 DPT=7906 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "5990dd310514",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 203.0.113.91 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T15:05:39.438713+00:00",
+   "detected_at": "2026-11-11T15:05:39.478775+00:00",
+   "latency_ms": 40.1,
+   "src_ip": "203.0.113.91",
+   "host": "web-02",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T15:05:38.981688+00:00 web-02 nginx: 203.0.113.91 - - [11/Nov/2026:15:05:38 +0000] \"GET /tmp HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:05:39.102293+00:00 web-02 nginx: 203.0.113.91 - - [11/Nov/2026:15:05:39 +0000] \"GET /config HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:05:39.200314+00:00 web-02 nginx: 203.0.113.91 - - [11/Nov/2026:15:05:39 +0000] \"GET /manager HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:05:39.300119+00:00 web-02 nginx: 203.0.113.91 - - [11/Nov/2026:15:05:39 +0000] \"GET /logs HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:05:39.438713+00:00 web-02 nginx: 203.0.113.91 - - [11/Nov/2026:15:05:39 +0000] \"GET /api/v2 HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "0ffcb895e1b6",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.71 in under 60s against 1 account(s): ubuntu",
+   "event_ts": "2026-11-11T15:05:20.576291+00:00",
+   "detected_at": "2026-11-11T15:05:20.629400+00:00",
+   "latency_ms": 53.1,
+   "src_ip": "192.0.2.71",
+   "host": "bastion",
+   "user": null,
+   "count": 15,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:05:25.456100+00:00 bastion sshd[47916]: Failed password for ubuntu from 192.0.2.71 port 56882 ssh2",
+    "2026-11-11T15:05:26.410264+00:00 bastion sshd[50339]: Failed password for ubuntu from 192.0.2.71 port 47810 ssh2",
+    "2026-11-11T15:05:27.602550+00:00 bastion sshd[29421]: Failed password for ubuntu from 192.0.2.71 port 42229 ssh2",
+    "2026-11-11T15:05:28.717474+00:00 bastion sshd[33175]: Failed password for ubuntu from 192.0.2.71 port 55301 ssh2",
+    "2026-11-11T15:05:29.858022+00:00 bastion sshd[22244]: Failed password for ubuntu from 192.0.2.71 port 62549 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "1fac1393fdcd",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "192.0.2.97 probed 15 distinct ports in under 60s (e.g. 21, 23, 25, 53, 110, 111, 135, 139, 143, 443...)",
+   "event_ts": "2026-11-11T15:05:09.432288+00:00",
+   "detected_at": "2026-11-11T15:05:09.442471+00:00",
+   "latency_ms": 10.2,
+   "src_ip": "192.0.2.97",
+   "host": "web-02",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:05:10.663379+00:00 web-02 kernel: [46324.979857] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.97 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=59 ID=21794 PROTO=TCP SPT=30787 DPT=5682 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:05:10.774834+00:00 web-02 kernel: [57583.243706] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.97 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=41 ID=36414 PROTO=TCP SPT=33089 DPT=4996 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:05:10.909434+00:00 web-02 kernel: [98315.221597] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.97 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=55 ID=17687 PROTO=TCP SPT=56373 DPT=8254 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:05:11.004310+00:00 web-02 kernel: [74324.939633] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.97 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=54 ID=5131 PROTO=TCP SPT=51499 DPT=4482 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:05:11.095820+00:00 web-02 kernel: [75475.322475] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.97 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=62 ID=51523 PROTO=TCP SPT=47748 DPT=9967 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "3d5222c47640",
+   "rule_id": "web_attack.sensitive",
+   "title": "Sensitive file probe",
+   "severity": "medium",
+   "description": "GET /.env from 203.0.113.171 (HTTP 400)",
+   "event_ts": "2026-11-11T15:04:48.685760+00:00",
+   "detected_at": "2026-11-11T15:04:48.711266+00:00",
+   "latency_ms": 25.5,
+   "src_ip": "203.0.113.171",
+   "host": "web-02",
+   "user": null,
+   "count": 1,
+   "mitre": "T1552.001",
+   "evidence": [
+    "2026-11-11T15:04:48.685760+00:00 web-02 nginx: 203.0.113.171 - - [11/Nov/2026:15:04:48 +0000] \"GET /.env HTTP/1.1\" 400 12632 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "553d1e750a27",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /static/..%2F..%2F..%2Fetc%2Fpasswd from 203.0.113.171 (HTTP 403)",
+   "event_ts": "2026-11-11T15:04:46.239026+00:00",
+   "detected_at": "2026-11-11T15:04:46.299413+00:00",
+   "latency_ms": 60.4,
+   "src_ip": "203.0.113.171",
+   "host": "web-02",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T15:04:46.239026+00:00 web-02 nginx: 203.0.113.171 - - [11/Nov/2026:15:04:46 +0000] \"GET /static/..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1\" 403 7867 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "f2e6ff42d612",
+   "rule_id": "sudo_abuse.denied",
+   "title": "Unauthorized sudo attempt",
+   "severity": "medium",
+   "description": "User 'intern' tried to run '/usr/bin/cat /etc/shadow' as root but is not allowed to use sudo",
+   "event_ts": "2026-11-11T15:04:31.943441+00:00",
+   "detected_at": "2026-11-11T15:04:32.021111+00:00",
+   "latency_ms": 77.7,
+   "src_ip": null,
+   "host": "web-01",
+   "user": "intern",
+   "count": 2,
+   "mitre": "T1548.003",
+   "evidence": [
+    "2026-11-11T15:04:31.943441+00:00 web-01 sudo[8369]:    intern : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/intern ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow",
+    "2026-11-11T15:07:43.675041+00:00 web-01 sudo[21358]:    intern : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/intern ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "dd07bc44e1b4",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH password spraying",
+   "severity": "high",
+   "description": "5 failed SSH logins from 203.0.113.175 in under 60s against 5 account(s): ftpuser, guest, oracle, pi, user",
+   "event_ts": "2026-11-11T15:04:20.268589+00:00",
+   "detected_at": "2026-11-11T15:04:20.355767+00:00",
+   "latency_ms": 87.2,
+   "src_ip": "203.0.113.175",
+   "host": "bastion",
+   "user": null,
+   "count": 5,
+   "mitre": "T1110.003",
+   "evidence": [
+    "2026-11-11T15:04:16.897360+00:00 bastion sshd[23051]: Failed password for invalid user guest from 203.0.113.175 port 33874 ssh2",
+    "2026-11-11T15:04:17.511879+00:00 bastion sshd[18126]: Failed password for invalid user ftpuser from 203.0.113.175 port 30162 ssh2",
+    "2026-11-11T15:04:18.567245+00:00 bastion sshd[52531]: Failed password for invalid user oracle from 203.0.113.175 port 55137 ssh2",
+    "2026-11-11T15:04:19.677887+00:00 bastion sshd[35566]: Failed password for invalid user user from 203.0.113.175 port 43926 ssh2",
+    "2026-11-11T15:04:20.268589+00:00 bastion sshd[22886]: Failed password for invalid user pi from 203.0.113.175 port 31134 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "579d369ddf38",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.117 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T15:04:02.033191+00:00",
+   "detected_at": "2026-11-11T15:04:02.101720+00:00",
+   "latency_ms": 68.5,
+   "src_ip": "192.0.2.117",
+   "host": "web-01",
+   "user": null,
+   "count": 10,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:04:02.433428+00:00 web-01 sshd[20098]: Failed password for invalid user admin from 192.0.2.117 port 63016 ssh2",
+    "2026-11-11T15:04:03.123639+00:00 web-01 sshd[59873]: Failed password for invalid user admin from 192.0.2.117 port 49267 ssh2",
+    "2026-11-11T15:04:04.176579+00:00 web-01 sshd[18955]: Failed password for invalid user admin from 192.0.2.117 port 57108 ssh2",
+    "2026-11-11T15:04:05.037048+00:00 web-01 sshd[39303]: Failed password for invalid user admin from 192.0.2.117 port 58441 ssh2",
+    "2026-11-11T15:04:05.411293+00:00 web-01 sshd[23410]: Failed password for invalid user admin from 192.0.2.117 port 50245 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "89d3752b9ba2",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 198.51.100.252 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T15:03:44.448545+00:00",
+   "detected_at": "2026-11-11T15:03:44.484472+00:00",
+   "latency_ms": 35.9,
+   "src_ip": "198.51.100.252",
+   "host": "web-01",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T15:03:43.955261+00:00 web-01 nginx: 198.51.100.252 - - [11/Nov/2026:15:03:43 +0000] \"GET /panel HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:03:44.026193+00:00 web-01 nginx: 198.51.100.252 - - [11/Nov/2026:15:03:44 +0000] \"GET /uploads HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:03:44.130556+00:00 web-01 nginx: 198.51.100.252 - - [11/Nov/2026:15:03:44 +0000] \"GET /old HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:03:44.264478+00:00 web-01 nginx: 198.51.100.252 - - [11/Nov/2026:15:03:44 +0000] \"GET /files HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:03:44.448545+00:00 web-01 nginx: 198.51.100.252 - - [11/Nov/2026:15:03:44 +0000] \"GET /test HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "8663413277ad",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 192.0.2.191 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T15:03:31.609428+00:00",
+   "detected_at": "2026-11-11T15:03:31.678872+00:00",
+   "latency_ms": 69.4,
+   "src_ip": "192.0.2.191",
+   "host": "web-01",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T15:03:31.420344+00:00 web-01 nginx: 192.0.2.191 - - [11/Nov/2026:15:03:31 +0000] \"GET /console HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:03:31.485534+00:00 web-01 nginx: 192.0.2.191 - - [11/Nov/2026:15:03:31 +0000] \"GET /backup HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:03:31.528316+00:00 web-01 nginx: 192.0.2.191 - - [11/Nov/2026:15:03:31 +0000] \"GET /old HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:03:31.573225+00:00 web-01 nginx: 192.0.2.191 - - [11/Nov/2026:15:03:31 +0000] \"GET /shell HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:03:31.609428+00:00 web-01 nginx: 192.0.2.191 - - [11/Nov/2026:15:03:31 +0000] \"GET /cgi-bin HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "ff044e2a3c6a",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 198.51.100.35 in under 60s against 1 account(s): ubuntu",
+   "event_ts": "2026-11-11T15:03:13.940248+00:00",
+   "detected_at": "2026-11-11T15:03:13.942499+00:00",
+   "latency_ms": 2.3,
+   "src_ip": "198.51.100.35",
+   "host": "web-01",
+   "user": null,
+   "count": 15,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:03:17.913782+00:00 web-01 sshd[42958]: Failed password for ubuntu from 198.51.100.35 port 43028 ssh2",
+    "2026-11-11T15:03:18.841012+00:00 web-01 sshd[49659]: Failed password for ubuntu from 198.51.100.35 port 61309 ssh2",
+    "2026-11-11T15:03:19.879881+00:00 web-01 sshd[56862]: Failed password for ubuntu from 198.51.100.35 port 35249 ssh2",
+    "2026-11-11T15:03:20.889234+00:00 web-01 sshd[4184]: Failed password for ubuntu from 198.51.100.35 port 60801 ssh2",
+    "2026-11-11T15:03:21.663235+00:00 web-01 sshd[17884]: Failed password for ubuntu from 198.51.100.35 port 51668 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "a70d8f053957",
+   "rule_id": "web_attack.sensitive",
+   "title": "Sensitive file probe",
+   "severity": "medium",
+   "description": "GET /.env from 198.51.100.73 (HTTP 404)",
+   "event_ts": "2026-11-11T15:03:00.199245+00:00",
+   "detected_at": "2026-11-11T15:03:00.219463+00:00",
+   "latency_ms": 20.2,
+   "src_ip": "198.51.100.73",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1552.001",
+   "evidence": [
+    "2026-11-11T15:03:00.199245+00:00 web-01 nginx: 198.51.100.73 - - [11/Nov/2026:15:03:00 +0000] \"GET /.env HTTP/1.1\" 404 1527 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "27521795a906",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /static/..%2F..%2F..%2Fetc%2Fpasswd from 198.51.100.73 (HTTP 400)",
+   "event_ts": "2026-11-11T15:02:58.211103+00:00",
+   "detected_at": "2026-11-11T15:02:58.308348+00:00",
+   "latency_ms": 97.2,
+   "src_ip": "198.51.100.73",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T15:02:58.211103+00:00 web-01 nginx: 198.51.100.73 - - [11/Nov/2026:15:02:58 +0000] \"GET /static/..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1\" 400 8417 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "65f1b24d6a6f",
+   "rule_id": "web_attack.sensitive",
+   "title": "Sensitive file probe",
+   "severity": "medium",
+   "description": "GET /.env from 203.0.113.100 (HTTP 403)",
+   "event_ts": "2026-11-11T15:02:41.312173+00:00",
+   "detected_at": "2026-11-11T15:02:41.412252+00:00",
+   "latency_ms": 100.1,
+   "src_ip": "203.0.113.100",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1552.001",
+   "evidence": [
+    "2026-11-11T15:02:41.312173+00:00 web-01 nginx: 203.0.113.100 - - [11/Nov/2026:15:02:41 +0000] \"GET /.env HTTP/1.1\" 403 1811 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "a4da55f62d3c",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /static/..%2F..%2F..%2Fetc%2Fpasswd from 203.0.113.100 (HTTP 404)",
+   "event_ts": "2026-11-11T15:02:39.691859+00:00",
+   "detected_at": "2026-11-11T15:02:39.702962+00:00",
+   "latency_ms": 11.1,
+   "src_ip": "203.0.113.100",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T15:02:39.691859+00:00 web-01 nginx: 203.0.113.100 - - [11/Nov/2026:15:02:39 +0000] \"GET /static/..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1\" 404 2410 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "ea7b734d82e7",
+   "rule_id": "web_attack.sqli",
+   "title": "SQL injection attempt",
+   "severity": "high",
+   "description": "GET /products?id=42%27%20OR%20%271%27%3D%271 from 198.51.100.39 (HTTP 500). Automated tool detected: sqlmap",
+   "event_ts": "2026-11-11T15:02:24.517785+00:00",
+   "detected_at": "2026-11-11T15:02:24.608836+00:00",
+   "latency_ms": 91.1,
+   "src_ip": "198.51.100.39",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T15:02:24.517785+00:00 web-01 nginx: 198.51.100.39 - - [11/Nov/2026:15:02:24 +0000] \"GET /products?id=42%27%20OR%20%271%27%3D%271 HTTP/1.1\" 500 14159 \"-\" \"sqlmap/1.8.11#stable (https://sqlmap.org)\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "56b18746d1de",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "198.51.100.38 probed 15 distinct ports in under 60s (e.g. 21, 22, 80, 110, 139, 143, 995, 1723, 5900, 6379...)",
+   "event_ts": "2026-11-11T15:02:06.419211+00:00",
+   "detected_at": "2026-11-11T15:02:06.487003+00:00",
+   "latency_ms": 67.8,
+   "src_ip": "198.51.100.38",
+   "host": "web-02",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T15:02:07.735013+00:00 web-02 kernel: [12831.521108] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.38 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=44 ID=64504 PROTO=TCP SPT=40691 DPT=2268 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:02:07.799607+00:00 web-02 kernel: [26605.195357] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.38 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=43 ID=8052 PROTO=TCP SPT=32366 DPT=8972 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:02:08.048541+00:00 web-02 kernel: [34421.322556] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.38 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=59 ID=13949 PROTO=TCP SPT=43951 DPT=3123 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:02:08.071116+00:00 web-02 kernel: [81301.586844] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.38 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=54 ID=36658 PROTO=TCP SPT=53481 DPT=5700 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T15:02:08.144212+00:00 web-02 kernel: [65717.640452] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.38 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=61 ID=63441 PROTO=TCP SPT=30423 DPT=5555 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "b4403c82a1f1",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 203.0.113.83 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T15:01:57.390752+00:00",
+   "detected_at": "2026-11-11T15:01:57.485140+00:00",
+   "latency_ms": 94.4,
+   "src_ip": "203.0.113.83",
+   "host": "bastion",
+   "user": null,
+   "count": 5,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:01:54.984798+00:00 bastion sshd[57697]: Failed password for invalid user admin from 203.0.113.83 port 60161 ssh2",
+    "2026-11-11T15:01:56.092177+00:00 bastion sshd[27803]: Failed password for invalid user admin from 203.0.113.83 port 46247 ssh2",
+    "2026-11-11T15:01:56.483416+00:00 bastion sshd[29084]: Failed password for invalid user admin from 203.0.113.83 port 39732 ssh2",
+    "2026-11-11T15:01:56.795450+00:00 bastion sshd[48490]: Failed password for invalid user admin from 203.0.113.83 port 39579 ssh2",
+    "2026-11-11T15:01:57.390752+00:00 bastion sshd[14214]: Failed password for invalid user admin from 203.0.113.83 port 54323 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "44a73bb5a4e7",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 198.51.100.83 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T15:01:40.333585+00:00",
+   "detected_at": "2026-11-11T15:01:40.345941+00:00",
+   "latency_ms": 12.4,
+   "src_ip": "198.51.100.83",
+   "host": "bastion",
+   "user": null,
+   "count": 15,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:01:44.064310+00:00 bastion sshd[2412]: Failed password for invalid user admin from 198.51.100.83 port 40811 ssh2",
+    "2026-11-11T15:01:45.192222+00:00 bastion sshd[23159]: Failed password for invalid user admin from 198.51.100.83 port 46351 ssh2",
+    "2026-11-11T15:01:46.290254+00:00 bastion sshd[8493]: Failed password for invalid user admin from 198.51.100.83 port 64449 ssh2",
+    "2026-11-11T15:01:47.420804+00:00 bastion sshd[21021]: Failed password for invalid user admin from 198.51.100.83 port 56764 ssh2",
+    "2026-11-11T15:01:47.825169+00:00 bastion sshd[58545]: Failed password for invalid user admin from 198.51.100.83 port 51723 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "06f6ef7524d2",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 198.51.100.6 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T15:01:22.641657+00:00",
+   "detected_at": "2026-11-11T15:01:22.649154+00:00",
+   "latency_ms": 7.5,
+   "src_ip": "198.51.100.6",
+   "host": "web-02",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T15:01:22.215501+00:00 web-02 nginx: 198.51.100.6 - - [11/Nov/2026:15:01:22 +0000] \"GET /staging HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:01:22.248895+00:00 web-02 nginx: 198.51.100.6 - - [11/Nov/2026:15:01:22 +0000] \"GET /logs HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:01:22.338508+00:00 web-02 nginx: 198.51.100.6 - - [11/Nov/2026:15:01:22 +0000] \"GET /dev HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:01:22.449818+00:00 web-02 nginx: 198.51.100.6 - - [11/Nov/2026:15:01:22 +0000] \"GET /server HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T15:01:22.641657+00:00 web-02 nginx: 198.51.100.6 - - [11/Nov/2026:15:01:22 +0000] \"GET /files HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "f45f463dc380",
+   "rule_id": "web_attack.sensitive",
+   "title": "Sensitive file probe",
+   "severity": "medium",
+   "description": "GET /.env from 203.0.113.113 (HTTP 400)",
+   "event_ts": "2026-11-11T15:01:14.179404+00:00",
+   "detected_at": "2026-11-11T15:01:14.251890+00:00",
+   "latency_ms": 72.5,
+   "src_ip": "203.0.113.113",
+   "host": "web-02",
+   "user": null,
+   "count": 1,
+   "mitre": "T1552.001",
+   "evidence": [
+    "2026-11-11T15:01:14.179404+00:00 web-02 nginx: 203.0.113.113 - - [11/Nov/2026:15:01:14 +0000] \"GET /.env HTTP/1.1\" 400 11527 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "7138177d4954",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /static/..%2F..%2F..%2Fetc%2Fpasswd from 203.0.113.113 (HTTP 403)",
+   "event_ts": "2026-11-11T15:01:11.989139+00:00",
+   "detected_at": "2026-11-11T15:01:12.035849+00:00",
+   "latency_ms": 46.7,
+   "src_ip": "203.0.113.113",
+   "host": "web-02",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T15:01:11.989139+00:00 web-02 nginx: 203.0.113.113 - - [11/Nov/2026:15:01:11 +0000] \"GET /static/..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1\" 403 5395 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "14aa0675b647",
+   "rule_id": "web_attack.sqli",
+   "title": "SQL injection attempt",
+   "severity": "high",
+   "description": "GET /products?id=42%27%20OR%20%271%27%3D%271 from 203.0.113.248 (HTTP 500). Automated tool detected: sqlmap",
+   "event_ts": "2026-11-11T15:00:57.682387+00:00",
+   "detected_at": "2026-11-11T15:00:57.752621+00:00",
+   "latency_ms": 70.2,
+   "src_ip": "203.0.113.248",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T15:00:57.682387+00:00 web-01 nginx: 203.0.113.248 - - [11/Nov/2026:15:00:57 +0000] \"GET /products?id=42%27%20OR%20%271%27%3D%271 HTTP/1.1\" 500 6708 \"-\" \"sqlmap/1.8.11#stable (https://sqlmap.org)\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "e13e9b31f5b5",
+   "rule_id": "web_attack.xss",
+   "title": "Cross-site scripting attempt",
+   "severity": "medium",
+   "description": "GET /search?q=%3Cscript%3Ealert(1)%3C%2Fscript%3E from 203.0.113.247 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T15:00:47.376826+00:00",
+   "detected_at": "2026-11-11T15:00:47.383790+00:00",
+   "latency_ms": 7.0,
+   "src_ip": "203.0.113.247",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T15:00:47.376826+00:00 web-01 nginx: 203.0.113.247 - - [11/Nov/2026:15:00:47 +0000] \"GET /search?q=%3Cscript%3Ealert(1)%3C%2Fscript%3E HTTP/1.1\" 200 13788 \"-\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "2ae258a4d6da",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd from 192.0.2.131 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T15:00:38.363131+00:00",
+   "detected_at": "2026-11-11T15:00:38.402421+00:00",
+   "latency_ms": 39.3,
+   "src_ip": "192.0.2.131",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T15:00:38.363131+00:00 web-01 nginx: 192.0.2.131 - - [11/Nov/2026:15:00:38 +0000] \"GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd HTTP/1.1\" 200 3233 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "b229f18af3b9",
+   "rule_id": "web_attack.cmdi",
+   "title": "Command injection attempt",
+   "severity": "critical",
+   "description": "GET /api/v1/ping?host=127.0.0.1%3Bid from 192.0.2.131 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T15:00:36.180744+00:00",
+   "detected_at": "2026-11-11T15:00:36.275807+00:00",
+   "latency_ms": 95.1,
+   "src_ip": "192.0.2.131",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1059",
+   "evidence": [
+    "2026-11-11T15:00:36.180744+00:00 web-01 nginx: 192.0.2.131 - - [11/Nov/2026:15:00:36 +0000] \"GET /api/v1/ping?host=127.0.0.1%3Bid HTTP/1.1\" 200 12026 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "e92e510b21ff",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH password spraying",
+   "severity": "high",
+   "description": "5 failed SSH logins from 198.51.100.129 in under 60s against 5 account(s): ftpuser, guest, oracle, postgres, test",
+   "event_ts": "2026-11-11T15:00:23.437767+00:00",
+   "detected_at": "2026-11-11T15:00:23.519204+00:00",
+   "latency_ms": 81.4,
+   "src_ip": "198.51.100.129",
+   "host": "web-02",
+   "user": null,
+   "count": 5,
+   "mitre": "T1110.003",
+   "evidence": [
+    "2026-11-11T15:00:18.738500+00:00 web-02 sshd[56267]: Failed password for invalid user test from 198.51.100.129 port 53309 ssh2",
+    "2026-11-11T15:00:19.986976+00:00 web-02 sshd[18470]: Failed password for invalid user oracle from 198.51.100.129 port 50299 ssh2",
+    "2026-11-11T15:00:21.188548+00:00 web-02 sshd[41392]: Failed password for invalid user guest from 198.51.100.129 port 58488 ssh2",
+    "2026-11-11T15:00:22.590970+00:00 web-02 sshd[52136]: Failed password for invalid user ftpuser from 198.51.100.129 port 54650 ssh2",
+    "2026-11-11T15:00:23.437767+00:00 web-02 sshd[60027]: Failed password for invalid user postgres from 198.51.100.129 port 64848 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "ff6cd10a520a",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.34 in under 60s against 1 account(s): root",
+   "event_ts": "2026-11-11T15:00:13.504364+00:00",
+   "detected_at": "2026-11-11T15:00:13.517894+00:00",
+   "latency_ms": 13.5,
+   "src_ip": "192.0.2.34",
+   "host": "web-01",
+   "user": null,
+   "count": 15,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T15:00:18.289618+00:00 web-01 sshd[1036]: Failed password for root from 192.0.2.34 port 31909 ssh2",
+    "2026-11-11T15:00:18.689281+00:00 web-01 sshd[44418]: Failed password for root from 192.0.2.34 port 30174 ssh2",
+    "2026-11-11T15:00:19.381187+00:00 web-01 sshd[40596]: Failed password for root from 192.0.2.34 port 44785 ssh2",
+    "2026-11-11T15:00:20.272279+00:00 web-01 sshd[11155]: Failed password for root from 192.0.2.34 port 39192 ssh2",
+    "2026-11-11T15:00:20.693775+00:00 web-01 sshd[47476]: Failed password for root from 192.0.2.34 port 39853 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "6c01a4308236",
+   "rule_id": "web_attack.sensitive",
+   "title": "Sensitive file probe",
+   "severity": "medium",
+   "description": "GET /.env from 203.0.113.162 (HTTP 404)",
+   "event_ts": "2026-11-11T14:59:58.508551+00:00",
+   "detected_at": "2026-11-11T14:59:58.600189+00:00",
+   "latency_ms": 91.6,
+   "src_ip": "203.0.113.162",
+   "host": "web-02",
+   "user": null,
+   "count": 1,
+   "mitre": "T1552.001",
+   "evidence": [
+    "2026-11-11T14:59:58.508551+00:00 web-02 nginx: 203.0.113.162 - - [11/Nov/2026:14:59:58 +0000] \"GET /.env HTTP/1.1\" 404 4495 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "7280d1817681",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /static/..%2F..%2F..%2Fetc%2Fpasswd from 203.0.113.162 (HTTP 404)",
+   "event_ts": "2026-11-11T14:59:56.412359+00:00",
+   "detected_at": "2026-11-11T14:59:56.473492+00:00",
+   "latency_ms": 61.1,
+   "src_ip": "203.0.113.162",
+   "host": "web-02",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T14:59:56.412359+00:00 web-02 nginx: 203.0.113.162 - - [11/Nov/2026:14:59:56 +0000] \"GET /static/..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1\" 404 13487 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "9a55b7887c2e",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 198.51.100.106 in under 60s against 1 account(s): root",
+   "event_ts": "2026-11-11T14:59:39.267680+00:00",
+   "detected_at": "2026-11-11T14:59:39.320678+00:00",
+   "latency_ms": 53.0,
+   "src_ip": "198.51.100.106",
+   "host": "web-01",
+   "user": null,
+   "count": 10,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T14:59:39.748226+00:00 web-01 sshd[6419]: Failed password for root from 198.51.100.106 port 55469 ssh2",
+    "2026-11-11T14:59:40.390611+00:00 web-01 sshd[34111]: Failed password for root from 198.51.100.106 port 45968 ssh2",
+    "2026-11-11T14:59:41.000575+00:00 web-01 sshd[59988]: Failed password for root from 198.51.100.106 port 64771 ssh2",
+    "2026-11-11T14:59:41.477319+00:00 web-01 sshd[48011]: Failed password for root from 198.51.100.106 port 55274 ssh2",
+    "2026-11-11T14:59:42.015861+00:00 web-01 sshd[29856]: Failed password for root from 198.51.100.106 port 40860 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "d3e08df4f7d6",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.61 in under 60s against 1 account(s): ubuntu",
+   "event_ts": "2026-11-11T14:59:20.735776+00:00",
+   "detected_at": "2026-11-11T14:59:20.779364+00:00",
+   "latency_ms": 43.6,
+   "src_ip": "192.0.2.61",
+   "host": "bastion",
+   "user": null,
+   "count": 15,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T14:59:25.078914+00:00 bastion sshd[48018]: Failed password for ubuntu from 192.0.2.61 port 63512 ssh2",
+    "2026-11-11T14:59:25.836794+00:00 bastion sshd[24140]: Failed password for ubuntu from 192.0.2.61 port 56261 ssh2",
+    "2026-11-11T14:59:26.484660+00:00 bastion sshd[13679]: Failed password for ubuntu from 192.0.2.61 port 42204 ssh2",
+    "2026-11-11T14:59:27.573365+00:00 bastion sshd[26242]: Failed password for ubuntu from 192.0.2.61 port 52085 ssh2",
+    "2026-11-11T14:59:28.053871+00:00 bastion sshd[4814]: Failed password for ubuntu from 192.0.2.61 port 34590 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "f0e6bdb1f2f1",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 192.0.2.26 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T14:59:01.186525+00:00",
+   "detected_at": "2026-11-11T14:59:01.248218+00:00",
+   "latency_ms": 61.7,
+   "src_ip": "192.0.2.26",
+   "host": "web-01",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T14:59:00.639531+00:00 web-01 nginx: 192.0.2.26 - - [11/Nov/2026:14:59:00 +0000] \"GET /cgi-bin HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:59:00.764648+00:00 web-01 nginx: 192.0.2.26 - - [11/Nov/2026:14:59:00 +0000] \"GET /server HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:59:00.865996+00:00 web-01 nginx: 192.0.2.26 - - [11/Nov/2026:14:59:00 +0000] \"GET /staging HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:59:00.997731+00:00 web-01 nginx: 192.0.2.26 - - [11/Nov/2026:14:59:00 +0000] \"GET /config HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:59:01.186525+00:00 web-01 nginx: 192.0.2.26 - - [11/Nov/2026:14:59:01 +0000] \"GET /install HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "4b68607fe0c2",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.129 in under 60s against 1 account(s): root",
+   "event_ts": "2026-11-11T14:58:50.592145+00:00",
+   "detected_at": "2026-11-11T14:58:50.659425+00:00",
+   "latency_ms": 67.3,
+   "src_ip": "192.0.2.129",
+   "host": "bastion",
+   "user": null,
+   "count": 5,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T14:58:48.781331+00:00 bastion sshd[1592]: Failed password for root from 192.0.2.129 port 33112 ssh2",
+    "2026-11-11T14:58:49.439588+00:00 bastion sshd[42287]: Failed password for root from 192.0.2.129 port 57790 ssh2",
+    "2026-11-11T14:58:49.787868+00:00 bastion sshd[21480]: Failed password for root from 192.0.2.129 port 63264 ssh2",
+    "2026-11-11T14:58:50.266154+00:00 bastion sshd[26715]: Failed password for root from 192.0.2.129 port 45063 ssh2",
+    "2026-11-11T14:58:50.592145+00:00 bastion sshd[41679]: Failed password for root from 192.0.2.129 port 31130 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "04c25e2503d1",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 198.51.100.191 in under 60s against 1 account(s): ubuntu",
+   "event_ts": "2026-11-11T14:58:32.239607+00:00",
+   "detected_at": "2026-11-11T14:58:32.310694+00:00",
+   "latency_ms": 71.1,
+   "src_ip": "198.51.100.191",
+   "host": "bastion",
+   "user": null,
+   "count": 10,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T14:58:33.415266+00:00 bastion sshd[55090]: Failed password for ubuntu from 198.51.100.191 port 57755 ssh2",
+    "2026-11-11T14:58:34.491245+00:00 bastion sshd[25652]: Failed password for ubuntu from 198.51.100.191 port 40718 ssh2",
+    "2026-11-11T14:58:35.621922+00:00 bastion sshd[20994]: Failed password for ubuntu from 198.51.100.191 port 51540 ssh2",
+    "2026-11-11T14:58:36.578409+00:00 bastion sshd[54965]: Failed password for ubuntu from 198.51.100.191 port 54747 ssh2",
+    "2026-11-11T14:58:37.496266+00:00 bastion sshd[48146]: Failed password for ubuntu from 198.51.100.191 port 62993 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "3c884ef97625",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.98 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T14:58:16.593614+00:00",
+   "detected_at": "2026-11-11T14:58:16.691169+00:00",
+   "latency_ms": 97.6,
+   "src_ip": "192.0.2.98",
+   "host": "web-02",
+   "user": null,
+   "count": 10,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T14:58:17.706661+00:00 web-02 sshd[6499]: Failed password for invalid user admin from 192.0.2.98 port 31777 ssh2",
+    "2026-11-11T14:58:18.626842+00:00 web-02 sshd[27129]: Failed password for invalid user admin from 192.0.2.98 port 64400 ssh2",
+    "2026-11-11T14:58:19.416467+00:00 web-02 sshd[13597]: Failed password for invalid user admin from 192.0.2.98 port 38979 ssh2",
+    "2026-11-11T14:58:20.475499+00:00 web-02 sshd[33823]: Failed password for invalid user admin from 192.0.2.98 port 58041 ssh2",
+    "2026-11-11T14:58:21.668486+00:00 web-02 sshd[36064]: Failed password for invalid user admin from 192.0.2.98 port 53582 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "e460b75967ca",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.235 in under 60s against 1 account(s): ubuntu",
+   "event_ts": "2026-11-11T14:58:01.897579+00:00",
+   "detected_at": "2026-11-11T14:58:01.972912+00:00",
+   "latency_ms": 75.3,
+   "src_ip": "192.0.2.235",
+   "host": "web-01",
+   "user": null,
+   "count": 10,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T14:58:02.568099+00:00 web-01 sshd[46898]: Failed password for ubuntu from 192.0.2.235 port 57864 ssh2",
+    "2026-11-11T14:58:03.224520+00:00 web-01 sshd[16823]: Failed password for ubuntu from 192.0.2.235 port 38799 ssh2",
+    "2026-11-11T14:58:04.336601+00:00 web-01 sshd[57220]: Failed password for ubuntu from 192.0.2.235 port 59405 ssh2",
+    "2026-11-11T14:58:04.808086+00:00 web-01 sshd[43077]: Failed password for ubuntu from 192.0.2.235 port 49346 ssh2",
+    "2026-11-11T14:58:05.406384+00:00 web-01 sshd[46650]: Failed password for ubuntu from 192.0.2.235 port 55929 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "f64bf4a44bb7",
+   "rule_id": "web_attack.sqli",
+   "title": "SQL injection attempt",
+   "severity": "high",
+   "description": "GET /products?id=42%27%20OR%20%271%27%3D%271 from 198.51.100.245 (HTTP 500). Automated tool detected: sqlmap",
+   "event_ts": "2026-11-11T14:57:38.989154+00:00",
+   "detected_at": "2026-11-11T14:57:39.025155+00:00",
+   "latency_ms": 36.0,
+   "src_ip": "198.51.100.245",
+   "host": "web-02",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T14:57:38.989154+00:00 web-02 nginx: 198.51.100.245 - - [11/Nov/2026:14:57:38 +0000] \"GET /products?id=42%27%20OR%20%271%27%3D%271 HTTP/1.1\" 500 316 \"-\" \"sqlmap/1.8.11#stable (https://sqlmap.org)\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "c977f3bae25c",
+   "rule_id": "web_attack.xss",
+   "title": "Cross-site scripting attempt",
+   "severity": "medium",
+   "description": "GET /search?q=%3Cscript%3Ealert(1)%3C%2Fscript%3E from 198.51.100.151 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T14:57:25.945120+00:00",
+   "detected_at": "2026-11-11T14:57:26.041316+00:00",
+   "latency_ms": 96.2,
+   "src_ip": "198.51.100.151",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T14:57:25.945120+00:00 web-01 nginx: 198.51.100.151 - - [11/Nov/2026:14:57:25 +0000] \"GET /search?q=%3Cscript%3Ealert(1)%3C%2Fscript%3E HTTP/1.1\" 200 1055 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "59581d033fc7",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd from 192.0.2.56 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T14:57:06.219774+00:00",
+   "detected_at": "2026-11-11T14:57:06.224292+00:00",
+   "latency_ms": 4.5,
+   "src_ip": "192.0.2.56",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T14:57:06.219774+00:00 web-01 nginx: 192.0.2.56 - - [11/Nov/2026:14:57:06 +0000] \"GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd HTTP/1.1\" 200 2546 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "0b3a395ed701",
+   "rule_id": "web_attack.cmdi",
+   "title": "Command injection attempt",
+   "severity": "critical",
+   "description": "GET /api/v1/ping?host=127.0.0.1%3Bid from 192.0.2.56 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T14:57:04.391196+00:00",
+   "detected_at": "2026-11-11T14:57:04.411519+00:00",
+   "latency_ms": 20.3,
+   "src_ip": "192.0.2.56",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1059",
+   "evidence": [
+    "2026-11-11T14:57:04.391196+00:00 web-01 nginx: 192.0.2.56 - - [11/Nov/2026:14:57:04 +0000] \"GET /api/v1/ping?host=127.0.0.1%3Bid HTTP/1.1\" 200 4702 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "4b57e143f2cb",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 203.0.113.137 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T14:56:45.386241+00:00",
+   "detected_at": "2026-11-11T14:56:45.394718+00:00",
+   "latency_ms": 8.5,
+   "src_ip": "203.0.113.137",
+   "host": "web-01",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T14:56:44.961573+00:00 web-01 nginx: 203.0.113.137 - - [11/Nov/2026:14:56:44 +0000] \"GET /install HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:56:45.022585+00:00 web-01 nginx: 203.0.113.137 - - [11/Nov/2026:14:56:45 +0000] \"GET /admin HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:56:45.076338+00:00 web-01 nginx: 203.0.113.137 - - [11/Nov/2026:14:56:45 +0000] \"GET /cgi-bin HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:56:45.191464+00:00 web-01 nginx: 203.0.113.137 - - [11/Nov/2026:14:56:45 +0000] \"GET /console HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:56:45.386241+00:00 web-01 nginx: 203.0.113.137 - - [11/Nov/2026:14:56:45 +0000] \"GET /db HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "990121281b43",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 192.0.2.183 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T14:56:32.093584+00:00",
+   "detected_at": "2026-11-11T14:56:32.167826+00:00",
+   "latency_ms": 74.2,
+   "src_ip": "192.0.2.183",
+   "host": "web-01",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T14:56:31.545562+00:00 web-01 nginx: 192.0.2.183 - - [11/Nov/2026:14:56:31 +0000] \"GET /config HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:56:31.673275+00:00 web-01 nginx: 192.0.2.183 - - [11/Nov/2026:14:56:31 +0000] \"GET /tmp HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:56:31.847204+00:00 web-01 nginx: 192.0.2.183 - - [11/Nov/2026:14:56:31 +0000] \"GET /data HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:56:31.925200+00:00 web-01 nginx: 192.0.2.183 - - [11/Nov/2026:14:56:31 +0000] \"GET /admin HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:56:32.093584+00:00 web-01 nginx: 192.0.2.183 - - [11/Nov/2026:14:56:32 +0000] \"GET /includes HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "8fa90650cd62",
+   "rule_id": "web_attack.sqli",
+   "title": "SQL injection attempt",
+   "severity": "high",
+   "description": "GET /products?id=42%27%20OR%20%271%27%3D%271 from 198.51.100.55 (HTTP 500). Automated tool detected: sqlmap",
+   "event_ts": "2026-11-11T14:56:22.774682+00:00",
+   "detected_at": "2026-11-11T14:56:22.799768+00:00",
+   "latency_ms": 25.1,
+   "src_ip": "198.51.100.55",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T14:56:22.774682+00:00 web-01 nginx: 198.51.100.55 - - [11/Nov/2026:14:56:22 +0000] \"GET /products?id=42%27%20OR%20%271%27%3D%271 HTTP/1.1\" 500 14843 \"-\" \"sqlmap/1.8.11#stable (https://sqlmap.org)\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "ec4ab4d79606",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd from 198.51.100.213 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T14:56:05.372931+00:00",
+   "detected_at": "2026-11-11T14:56:05.376222+00:00",
+   "latency_ms": 3.3,
+   "src_ip": "198.51.100.213",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T14:56:05.372931+00:00 web-01 nginx: 198.51.100.213 - - [11/Nov/2026:14:56:05 +0000] \"GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd HTTP/1.1\" 200 10152 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "f6b25e9c8fdf",
+   "rule_id": "web_attack.cmdi",
+   "title": "Command injection attempt",
+   "severity": "critical",
+   "description": "GET /api/v1/ping?host=127.0.0.1%3Bid from 198.51.100.213 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T14:56:03.758267+00:00",
+   "detected_at": "2026-11-11T14:56:03.765511+00:00",
+   "latency_ms": 7.2,
+   "src_ip": "198.51.100.213",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1059",
+   "evidence": [
+    "2026-11-11T14:56:03.758267+00:00 web-01 nginx: 198.51.100.213 - - [11/Nov/2026:14:56:03 +0000] \"GET /api/v1/ping?host=127.0.0.1%3Bid HTTP/1.1\" 200 7816 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "513ff276e505",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH password spraying",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.194 in under 60s against 5 account(s): guest, root, support, test, user",
+   "event_ts": "2026-11-11T14:55:46.324820+00:00",
+   "detected_at": "2026-11-11T14:55:46.331989+00:00",
+   "latency_ms": 7.2,
+   "src_ip": "192.0.2.194",
+   "host": "web-01",
+   "user": null,
+   "count": 5,
+   "mitre": "T1110.003",
+   "evidence": [
+    "2026-11-11T14:55:42.388321+00:00 web-01 sshd[59501]: Failed password for invalid user test from 192.0.2.194 port 62984 ssh2",
+    "2026-11-11T14:55:43.874122+00:00 web-01 sshd[48075]: Failed password for invalid user user from 192.0.2.194 port 34175 ssh2",
+    "2026-11-11T14:55:44.991571+00:00 web-01 sshd[15331]: Failed password for root from 192.0.2.194 port 53357 ssh2",
+    "2026-11-11T14:55:45.451689+00:00 web-01 sshd[11762]: Failed password for invalid user guest from 192.0.2.194 port 40150 ssh2",
+    "2026-11-11T14:55:46.324820+00:00 web-01 sshd[11413]: Failed password for invalid user support from 192.0.2.194 port 60753 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "b0231f8c747e",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH password spraying",
+   "severity": "high",
+   "description": "5 failed SSH logins from 198.51.100.253 in under 60s against 5 account(s): guest, root, support, ubnt, user",
+   "event_ts": "2026-11-11T14:55:27.957445+00:00",
+   "detected_at": "2026-11-11T14:55:27.988622+00:00",
+   "latency_ms": 31.2,
+   "src_ip": "198.51.100.253",
+   "host": "bastion",
+   "user": null,
+   "count": 5,
+   "mitre": "T1110.003",
+   "evidence": [
+    "2026-11-11T14:55:24.424431+00:00 bastion sshd[4249]: Failed password for invalid user guest from 198.51.100.253 port 63856 ssh2",
+    "2026-11-11T14:55:25.252141+00:00 bastion sshd[36856]: Failed password for root from 198.51.100.253 port 32655 ssh2",
+    "2026-11-11T14:55:26.424708+00:00 bastion sshd[12474]: Failed password for invalid user ubnt from 198.51.100.253 port 33321 ssh2",
+    "2026-11-11T14:55:26.995540+00:00 bastion sshd[42403]: Failed password for invalid user user from 198.51.100.253 port 35508 ssh2",
+    "2026-11-11T14:55:27.957445+00:00 bastion sshd[23854]: Failed password for invalid user support from 198.51.100.253 port 63317 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "7dd1052f7af3",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd from 203.0.113.254 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T14:55:08.994550+00:00",
+   "detected_at": "2026-11-11T14:55:09.035685+00:00",
+   "latency_ms": 41.1,
+   "src_ip": "203.0.113.254",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T14:55:08.994550+00:00 web-01 nginx: 203.0.113.254 - - [11/Nov/2026:14:55:08 +0000] \"GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd HTTP/1.1\" 200 930 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "df58767b5f8a",
+   "rule_id": "web_attack.cmdi",
+   "title": "Command injection attempt",
+   "severity": "critical",
+   "description": "GET /api/v1/ping?host=127.0.0.1%3Bid from 203.0.113.254 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T14:55:07.853098+00:00",
+   "detected_at": "2026-11-11T14:55:07.923755+00:00",
+   "latency_ms": 70.7,
+   "src_ip": "203.0.113.254",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1059",
+   "evidence": [
+    "2026-11-11T14:55:07.853098+00:00 web-01 nginx: 203.0.113.254 - - [11/Nov/2026:14:55:07 +0000] \"GET /api/v1/ping?host=127.0.0.1%3Bid HTTP/1.1\" 200 1396 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "7bfb32fd141c",
+   "rule_id": "sudo_abuse.denied",
+   "title": "Unauthorized sudo attempt",
+   "severity": "medium",
+   "description": "User 'intern' tried to run '/usr/bin/cat /etc/shadow' as root but is not allowed to use sudo",
+   "event_ts": "2026-11-11T14:54:52.307214+00:00",
+   "detected_at": "2026-11-11T14:54:52.412738+00:00",
+   "latency_ms": 105.5,
+   "src_ip": null,
+   "host": "web-02",
+   "user": "intern",
+   "count": 1,
+   "mitre": "T1548.003",
+   "evidence": [
+    "2026-11-11T14:54:52.307214+00:00 web-02 sudo[24761]:    intern : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/intern ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "13f9d602ff76",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "192.0.2.214 probed 15 distinct ports in under 60s (e.g. 21, 22, 25, 53, 111, 139, 1433, 1521, 2049, 3306...)",
+   "event_ts": "2026-11-11T14:54:41.659543+00:00",
+   "detected_at": "2026-11-11T14:54:41.707184+00:00",
+   "latency_ms": 47.6,
+   "src_ip": "192.0.2.214",
+   "host": "bastion",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T14:54:43.320464+00:00 bastion kernel: [60691.544686] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.214 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=57 ID=50722 PROTO=TCP SPT=53971 DPT=7920 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:54:43.558805+00:00 bastion kernel: [13674.925375] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.214 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=55 ID=25432 PROTO=TCP SPT=46606 DPT=7592 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:54:43.642604+00:00 bastion kernel: [27413.528375] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.214 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=54 ID=43314 PROTO=TCP SPT=38598 DPT=4710 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:54:43.856180+00:00 bastion kernel: [18218.523346] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.214 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=29747 PROTO=TCP SPT=34271 DPT=9820 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:54:44.017732+00:00 bastion kernel: [45513.717944] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.214 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=48 ID=5091 PROTO=TCP SPT=58337 DPT=1255 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "61af357bfa1d",
+   "rule_id": "web_attack.sensitive",
+   "title": "Sensitive file probe",
+   "severity": "medium",
+   "description": "GET /.env from 198.51.100.136 (HTTP 404)",
+   "event_ts": "2026-11-11T14:54:25.734292+00:00",
+   "detected_at": "2026-11-11T14:54:25.771372+00:00",
+   "latency_ms": 37.1,
+   "src_ip": "198.51.100.136",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1552.001",
+   "evidence": [
+    "2026-11-11T14:54:25.734292+00:00 web-01 nginx: 198.51.100.136 - - [11/Nov/2026:14:54:25 +0000] \"GET /.env HTTP/1.1\" 404 12187 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "3964dde73b2d",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /static/..%2F..%2F..%2Fetc%2Fpasswd from 198.51.100.136 (HTTP 404)",
+   "event_ts": "2026-11-11T14:54:22.956651+00:00",
+   "detected_at": "2026-11-11T14:54:23.053922+00:00",
+   "latency_ms": 97.3,
+   "src_ip": "198.51.100.136",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T14:54:22.956651+00:00 web-01 nginx: 198.51.100.136 - - [11/Nov/2026:14:54:22 +0000] \"GET /static/..%2F..%2F..%2Fetc%2Fpasswd HTTP/1.1\" 404 3055 \"-\" \"curl/8.5.0\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "a61f970e84fb",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "198.51.100.168 probed 15 distinct ports in under 60s (e.g. 22, 23, 80, 143, 443, 445, 995, 1433, 1723, 2049...)",
+   "event_ts": "2026-11-11T14:54:16.930136+00:00",
+   "detected_at": "2026-11-11T14:54:16.996564+00:00",
+   "latency_ms": 66.4,
+   "src_ip": "198.51.100.168",
+   "host": "web-01",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T14:54:18.381353+00:00 web-01 kernel: [69123.418017] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.168 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=55 ID=6397 PROTO=TCP SPT=38257 DPT=4548 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:54:18.579078+00:00 web-01 kernel: [80166.310390] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.168 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=45 ID=4464 PROTO=TCP SPT=54855 DPT=3063 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:54:18.605880+00:00 web-01 kernel: [32335.445984] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.168 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=49 ID=49276 PROTO=TCP SPT=51356 DPT=6419 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:54:18.705568+00:00 web-01 kernel: [38470.140183] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.168 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=6119 PROTO=TCP SPT=35011 DPT=8708 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:54:18.783085+00:00 web-01 kernel: [46483.399704] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=198.51.100.168 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=56 ID=4732 PROTO=TCP SPT=34020 DPT=3214 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "8debbfc0c326",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 203.0.113.138 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T14:54:09.340309+00:00",
+   "detected_at": "2026-11-11T14:54:09.418071+00:00",
+   "latency_ms": 77.8,
+   "src_ip": "203.0.113.138",
+   "host": "web-02",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T14:54:08.891773+00:00 web-02 nginx: 203.0.113.138 - - [11/Nov/2026:14:54:08 +0000] \"GET /private HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:54:08.985138+00:00 web-02 nginx: 203.0.113.138 - - [11/Nov/2026:14:54:08 +0000] \"GET /db HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:54:09.128363+00:00 web-02 nginx: 203.0.113.138 - - [11/Nov/2026:14:54:09 +0000] \"GET /dashboard HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:54:09.291338+00:00 web-02 nginx: 203.0.113.138 - - [11/Nov/2026:14:54:09 +0000] \"GET /manager HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:54:09.340309+00:00 web-02 nginx: 203.0.113.138 - - [11/Nov/2026:14:54:09 +0000] \"GET /api/v2 HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "6252b378d3ee",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 198.51.100.44 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T14:53:53.621791+00:00",
+   "detected_at": "2026-11-11T14:53:53.679576+00:00",
+   "latency_ms": 57.8,
+   "src_ip": "198.51.100.44",
+   "host": "bastion",
+   "user": null,
+   "count": 15,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T14:53:58.476507+00:00 bastion sshd[9711]: Failed password for invalid user admin from 198.51.100.44 port 42900 ssh2",
+    "2026-11-11T14:53:59.662091+00:00 bastion sshd[42478]: Failed password for invalid user admin from 198.51.100.44 port 61968 ssh2",
+    "2026-11-11T14:54:00.404000+00:00 bastion sshd[31559]: Failed password for invalid user admin from 198.51.100.44 port 50349 ssh2",
+    "2026-11-11T14:54:00.856479+00:00 bastion sshd[8030]: Failed password for invalid user admin from 198.51.100.44 port 39542 ssh2",
+    "2026-11-11T14:54:01.709786+00:00 bastion sshd[8600]: Failed password for invalid user admin from 198.51.100.44 port 41406 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "3ba88e2c16ab",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 203.0.113.120 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T14:53:36.754811+00:00",
+   "detected_at": "2026-11-11T14:53:36.764011+00:00",
+   "latency_ms": 9.2,
+   "src_ip": "203.0.113.120",
+   "host": "bastion",
+   "user": null,
+   "count": 10,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T14:53:37.922675+00:00 bastion sshd[48934]: Failed password for invalid user admin from 203.0.113.120 port 50567 ssh2",
+    "2026-11-11T14:53:38.633527+00:00 bastion sshd[59572]: Failed password for invalid user admin from 203.0.113.120 port 57879 ssh2",
+    "2026-11-11T14:53:39.233305+00:00 bastion sshd[52704]: Failed password for invalid user admin from 203.0.113.120 port 41813 ssh2",
+    "2026-11-11T14:53:39.816198+00:00 bastion sshd[35653]: Failed password for invalid user admin from 203.0.113.120 port 30424 ssh2",
+    "2026-11-11T14:53:40.862841+00:00 bastion sshd[23724]: Failed password for invalid user admin from 203.0.113.120 port 39634 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "2a5de845d74d",
+   "rule_id": "web_attack.sqli",
+   "title": "SQL injection attempt",
+   "severity": "high",
+   "description": "GET /products?id=42%27%20OR%20%271%27%3D%271 from 198.51.100.159 (HTTP 500). Automated tool detected: sqlmap",
+   "event_ts": "2026-11-11T14:53:22.414676+00:00",
+   "detected_at": "2026-11-11T14:53:22.465208+00:00",
+   "latency_ms": 50.5,
+   "src_ip": "198.51.100.159",
+   "host": "web-02",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T14:53:22.414676+00:00 web-02 nginx: 198.51.100.159 - - [11/Nov/2026:14:53:22 +0000] \"GET /products?id=42%27%20OR%20%271%27%3D%271 HTTP/1.1\" 500 2047 \"-\" \"sqlmap/1.8.11#stable (https://sqlmap.org)\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "63fbe70e7288",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 203.0.113.220 in under 60s against 1 account(s): ubuntu",
+   "event_ts": "2026-11-11T14:53:07.878408+00:00",
+   "detected_at": "2026-11-11T14:53:07.968140+00:00",
+   "latency_ms": 89.7,
+   "src_ip": "203.0.113.220",
+   "host": "web-01",
+   "user": null,
+   "count": 5,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T14:53:05.281611+00:00 web-01 sshd[4665]: Failed password for ubuntu from 203.0.113.220 port 50226 ssh2",
+    "2026-11-11T14:53:05.642632+00:00 web-01 sshd[35729]: Failed password for ubuntu from 203.0.113.220 port 40089 ssh2",
+    "2026-11-11T14:53:06.317341+00:00 web-01 sshd[43201]: Failed password for ubuntu from 203.0.113.220 port 32723 ssh2",
+    "2026-11-11T14:53:07.096627+00:00 web-01 sshd[31670]: Failed password for ubuntu from 203.0.113.220 port 53100 ssh2",
+    "2026-11-11T14:53:07.878408+00:00 web-01 sshd[17562]: Failed password for ubuntu from 203.0.113.220 port 57186 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "5c0ebecf0e37",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "203.0.113.216 probed 15 distinct ports in under 60s (e.g. 23, 25, 110, 111, 135, 143, 445, 1433, 1723, 3000...)",
+   "event_ts": "2026-11-11T14:52:55.794357+00:00",
+   "detected_at": "2026-11-11T14:52:55.876251+00:00",
+   "latency_ms": 81.9,
+   "src_ip": "203.0.113.216",
+   "host": "bastion",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T14:52:57.215365+00:00 bastion kernel: [78910.571411] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.216 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=47 ID=31471 PROTO=TCP SPT=45989 DPT=5651 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:52:57.313909+00:00 bastion kernel: [42903.583978] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.216 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=58 ID=12813 PROTO=TCP SPT=57156 DPT=4788 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:52:57.527832+00:00 bastion kernel: [52580.465105] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.216 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=46 ID=6010 PROTO=TCP SPT=60259 DPT=9053 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:52:57.624423+00:00 bastion kernel: [75770.749902] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.216 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=52 ID=20280 PROTO=TCP SPT=64307 DPT=8547 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:52:57.809845+00:00 bastion kernel: [82183.855636] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=203.0.113.216 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=48 ID=50736 PROTO=TCP SPT=56912 DPT=9032 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "88597a33a403",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH brute-force attack",
+   "severity": "high",
+   "description": "5 failed SSH logins from 192.0.2.76 in under 60s against 1 account(s): admin",
+   "event_ts": "2026-11-11T14:52:47.833629+00:00",
+   "detected_at": "2026-11-11T14:52:47.906230+00:00",
+   "latency_ms": 72.6,
+   "src_ip": "192.0.2.76",
+   "host": "bastion",
+   "user": null,
+   "count": 15,
+   "mitre": "T1110.001",
+   "evidence": [
+    "2026-11-11T14:52:53.085966+00:00 bastion sshd[32731]: Failed password for invalid user admin from 192.0.2.76 port 52954 ssh2",
+    "2026-11-11T14:52:53.472652+00:00 bastion sshd[37546]: Failed password for invalid user admin from 192.0.2.76 port 59100 ssh2",
+    "2026-11-11T14:52:54.501635+00:00 bastion sshd[39085]: Failed password for invalid user admin from 192.0.2.76 port 40217 ssh2",
+    "2026-11-11T14:52:55.442611+00:00 bastion sshd[33823]: Failed password for invalid user admin from 192.0.2.76 port 32864 ssh2",
+    "2026-11-11T14:52:56.523327+00:00 bastion sshd[27308]: Failed password for invalid user admin from 192.0.2.76 port 50617 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "483e79f06aba",
+   "rule_id": "port_scan",
+   "title": "Port scan detected",
+   "severity": "medium",
+   "description": "192.0.2.89 probed 15 distinct ports in under 60s (e.g. 21, 22, 23, 25, 53, 80, 110, 135, 445, 993...)",
+   "event_ts": "2026-11-11T14:52:38.219335+00:00",
+   "detected_at": "2026-11-11T14:52:38.233411+00:00",
+   "latency_ms": 14.1,
+   "src_ip": "192.0.2.89",
+   "host": "bastion",
+   "user": null,
+   "count": 30,
+   "mitre": "T1046",
+   "evidence": [
+    "2026-11-11T14:52:39.866296+00:00 bastion kernel: [82278.777100] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.89 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=64 ID=32324 PROTO=TCP SPT=43406 DPT=1257 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:52:39.951239+00:00 bastion kernel: [40206.468054] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.89 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=62 ID=39499 PROTO=TCP SPT=34079 DPT=9272 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:52:40.136045+00:00 bastion kernel: [98492.607839] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.89 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=48 ID=38407 PROTO=TCP SPT=43982 DPT=8567 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:52:40.217696+00:00 bastion kernel: [67946.362720] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.89 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=41 ID=6537 PROTO=TCP SPT=37327 DPT=6161 WINDOW=1024 RES=0x00 SYN URGP=0",
+    "2026-11-11T14:52:40.407773+00:00 bastion kernel: [62250.896703] [UFW BLOCK] IN=eth0 OUT= MAC=0a:1b:2c:3d:4e:5f SRC=192.0.2.89 DST=10.0.1.10 LEN=44 TOS=0x00 PREC=0x00 TTL=48 ID=50004 PROTO=TCP SPT=64925 DPT=7999 WINDOW=1024 RES=0x00 SYN URGP=0"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "5f24456dabba",
+   "rule_id": "web_attack.sqli",
+   "title": "SQL injection attempt",
+   "severity": "high",
+   "description": "GET /products?id=42%27%20OR%20%271%27%3D%271 from 198.51.100.60 (HTTP 500). Automated tool detected: sqlmap",
+   "event_ts": "2026-11-11T14:52:28.128499+00:00",
+   "detected_at": "2026-11-11T14:52:28.158144+00:00",
+   "latency_ms": 29.6,
+   "src_ip": "198.51.100.60",
+   "host": "web-02",
+   "user": null,
+   "count": 1,
+   "mitre": "T1190",
+   "evidence": [
+    "2026-11-11T14:52:28.128499+00:00 web-02 nginx: 198.51.100.60 - - [11/Nov/2026:14:52:28 +0000] \"GET /products?id=42%27%20OR%20%271%27%3D%271 HTTP/1.1\" 500 12370 \"-\" \"sqlmap/1.8.11#stable (https://sqlmap.org)\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "1da789526478",
+   "rule_id": "ssh_bruteforce",
+   "title": "SSH password spraying",
+   "severity": "high",
+   "description": "5 failed SSH logins from 203.0.113.96 in under 60s against 5 account(s): admin, pi, postgres, root, ubnt",
+   "event_ts": "2026-11-11T14:52:16.124328+00:00",
+   "detected_at": "2026-11-11T14:52:16.173532+00:00",
+   "latency_ms": 49.2,
+   "src_ip": "203.0.113.96",
+   "host": "web-01",
+   "user": null,
+   "count": 5,
+   "mitre": "T1110.003",
+   "evidence": [
+    "2026-11-11T14:52:11.576066+00:00 web-01 sshd[50037]: Failed password for invalid user postgres from 203.0.113.96 port 44735 ssh2",
+    "2026-11-11T14:52:12.982580+00:00 web-01 sshd[48344]: Failed password for root from 203.0.113.96 port 64936 ssh2",
+    "2026-11-11T14:52:14.468024+00:00 web-01 sshd[31612]: Failed password for invalid user pi from 203.0.113.96 port 59200 ssh2",
+    "2026-11-11T14:52:15.711155+00:00 web-01 sshd[32848]: Failed password for invalid user admin from 203.0.113.96 port 62546 ssh2",
+    "2026-11-11T14:52:16.124328+00:00 web-01 sshd[24510]: Failed password for invalid user ubnt from 203.0.113.96 port 58846 ssh2"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "d68c2b758d30",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 203.0.113.168 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T14:51:55.625368+00:00",
+   "detected_at": "2026-11-11T14:51:55.681791+00:00",
+   "latency_ms": 56.4,
+   "src_ip": "203.0.113.168",
+   "host": "web-01",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T14:51:55.083336+00:00 web-01 nginx: 203.0.113.168 - - [11/Nov/2026:14:51:55 +0000] \"GET /console HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:55.155953+00:00 web-01 nginx: 203.0.113.168 - - [11/Nov/2026:14:51:55 +0000] \"GET /debug HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:55.305463+00:00 web-01 nginx: 203.0.113.168 - - [11/Nov/2026:14:51:55 +0000] \"GET /config HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:55.472995+00:00 web-01 nginx: 203.0.113.168 - - [11/Nov/2026:14:51:55 +0000] \"GET /data HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:55.625368+00:00 web-01 nginx: 203.0.113.168 - - [11/Nov/2026:14:51:55 +0000] \"GET /private HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "0b1299d4e4fe",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 203.0.113.169 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T14:51:35.955093+00:00",
+   "detected_at": "2026-11-11T14:51:36.004078+00:00",
+   "latency_ms": 49.0,
+   "src_ip": "203.0.113.169",
+   "host": "web-01",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T14:51:35.531607+00:00 web-01 nginx: 203.0.113.169 - - [11/Nov/2026:14:51:35 +0000] \"GET /dashboard HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:35.650172+00:00 web-01 nginx: 203.0.113.169 - - [11/Nov/2026:14:51:35 +0000] \"GET /files HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:35.733746+00:00 web-01 nginx: 203.0.113.169 - - [11/Nov/2026:14:51:35 +0000] \"GET /admin HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:35.905968+00:00 web-01 nginx: 203.0.113.169 - - [11/Nov/2026:14:51:35 +0000] \"GET /logs HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:35.955093+00:00 web-01 nginx: 203.0.113.169 - - [11/Nov/2026:14:51:35 +0000] \"GET /includes HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "d8b84fbed318",
+   "rule_id": "web_enumeration",
+   "title": "Web directory enumeration",
+   "severity": "medium",
+   "description": "20 client-error responses (404/403) to 203.0.113.157 in under 60s - likely a content discovery scan using gobuster",
+   "event_ts": "2026-11-11T14:51:27.102271+00:00",
+   "detected_at": "2026-11-11T14:51:27.114352+00:00",
+   "latency_ms": 12.1,
+   "src_ip": "203.0.113.157",
+   "host": "web-02",
+   "user": null,
+   "count": 20,
+   "mitre": "T1595.003",
+   "evidence": [
+    "2026-11-11T14:51:26.533029+00:00 web-02 nginx: 203.0.113.157 - - [11/Nov/2026:14:51:26 +0000] \"GET /uploads HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:26.696063+00:00 web-02 nginx: 203.0.113.157 - - [11/Nov/2026:14:51:26 +0000] \"GET /cgi-bin HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:26.773619+00:00 web-02 nginx: 203.0.113.157 - - [11/Nov/2026:14:51:26 +0000] \"GET /debug HTTP/1.1\" 403 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:26.922727+00:00 web-02 nginx: 203.0.113.157 - - [11/Nov/2026:14:51:26 +0000] \"GET /temp HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\"",
+    "2026-11-11T14:51:27.102271+00:00 web-02 nginx: 203.0.113.157 - - [11/Nov/2026:14:51:27 +0000] \"GET /files HTTP/1.1\" 404 162 \"-\" \"gobuster/3.6\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "5254e7c346a1",
+   "rule_id": "sudo_abuse.service_account",
+   "title": "Service account used sudo",
+   "severity": "critical",
+   "description": "Service account 'www-data' ran '/bin/bash -i' as root. Web/database accounts should never do this - possible web shell or exploited service.",
+   "event_ts": "2026-11-11T14:51:11.664335+00:00",
+   "detected_at": "2026-11-11T14:51:11.668372+00:00",
+   "latency_ms": 4.0,
+   "src_ip": null,
+   "host": "web-01",
+   "user": "www-data",
+   "count": 5,
+   "mitre": "T1548.003",
+   "evidence": [
+    "2026-11-11T14:51:11.664335+00:00 web-01 sudo[19842]:    www-data : TTY=pts/0 ; PWD=/var/www/html ; USER=root ; COMMAND=/bin/bash -i",
+    "2026-11-11T14:55:12.135435+00:00 web-01 sudo[3478]:    www-data : TTY=pts/0 ; PWD=/var/www/html ; USER=root ; COMMAND=/bin/bash -i",
+    "2026-11-11T14:56:07.900818+00:00 web-01 sudo[35118]:    www-data : TTY=pts/0 ; PWD=/var/www/html ; USER=root ; COMMAND=/bin/bash -i",
+    "2026-11-11T14:57:09.511231+00:00 web-01 sudo[53229]:    www-data : TTY=pts/0 ; PWD=/var/www/html ; USER=root ; COMMAND=/bin/bash -i",
+    "2026-11-11T15:00:40.430342+00:00 web-01 sudo[62099]:    www-data : TTY=pts/0 ; PWD=/var/www/html ; USER=root ; COMMAND=/bin/bash -i"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "4f807180bf52",
+   "rule_id": "web_attack.traversal",
+   "title": "Path traversal attempt",
+   "severity": "high",
+   "description": "GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd from 192.0.2.209 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T14:51:07.749043+00:00",
+   "detected_at": "2026-11-11T14:51:07.837912+00:00",
+   "latency_ms": 88.9,
+   "src_ip": "192.0.2.209",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1083",
+   "evidence": [
+    "2026-11-11T14:51:07.749043+00:00 web-01 nginx: 192.0.2.209 - - [11/Nov/2026:14:51:07 +0000] \"GET /api/v1/ping?host=127.0.0.1%7Ccat%20%2Fetc%2Fpasswd HTTP/1.1\" 200 2332 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  },
+  {
+   "id": "8d5735b342fd",
+   "rule_id": "web_attack.cmdi",
+   "title": "Command injection attempt",
+   "severity": "critical",
+   "description": "GET /api/v1/ping?host=127.0.0.1%3Bid from 192.0.2.209 (HTTP 200, server returned success - check the app)",
+   "event_ts": "2026-11-11T14:51:06.092922+00:00",
+   "detected_at": "2026-11-11T14:51:06.120608+00:00",
+   "latency_ms": 27.7,
+   "src_ip": "192.0.2.209",
+   "host": "web-01",
+   "user": null,
+   "count": 1,
+   "mitre": "T1059",
+   "evidence": [
+    "2026-11-11T14:51:06.092922+00:00 web-01 nginx: 192.0.2.209 - - [11/Nov/2026:14:51:06 +0000] \"GET /api/v1/ping?host=127.0.0.1%3Bid HTTP/1.1\" 200 13740 \"-\" \"python-requests/2.32.3\""
+   ],
+   "status": "open"
+  }
+ ],
+ "rules": [
+  {
+   "id": "ssh_bruteforce",
+   "name": "SSH brute force / password spraying",
+   "mitre": "T1110",
+   "severity": "high"
+  },
+  {
+   "id": "ssh_compromise",
+   "name": "Login success after brute force",
+   "mitre": "T1078",
+   "severity": "critical"
+  },
+  {
+   "id": "port_scan",
+   "name": "Port scan (firewall blocks)",
+   "mitre": "T1046",
+   "severity": "medium"
+  },
+  {
+   "id": "web_attack",
+   "name": "Web payloads: SQLi, XSS, traversal, command injection",
+   "mitre": "T1190",
+   "severity": "high"
+  },
+  {
+   "id": "web_enumeration",
+   "name": "Directory enumeration (404 burst)",
+   "mitre": "T1595.003",
+   "severity": "medium"
+  },
+  {
+   "id": "sudo_abuse",
+   "name": "sudo abuse / privilege escalation",
+   "mitre": "T1548.003",
+   "severity": "medium"
+  }
+ ]
+}

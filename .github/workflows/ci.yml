@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - name: Lint
+        run: ruff check .
+      - name: Unit and integration tests
+        run: pytest -v
+      - name: Detect attacks in the sample logs
+        run: python -m logsentry replay samples/attack-sample.log
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t logsentry:ci .
+      - name: Smoke test the container
+        run: |
+          docker run -d --name ls -p 8080:8080 logsentry:ci python -m logsentry demo --attack-every 2
+          for i in $(seq 1 30); do curl -sf localhost:8080/api/health && break; sleep 1; done
+          sleep 8
+          curl -sf localhost:8080/api/dashboard | python3 -c "import json,sys; d=json.load(sys.stdin); n=d['stats']['total_alerts']; print('alerts:', n); assert n > 0"
+          docker rm -f ls
+
+  terraform:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: infra/terraform
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform fmt -check -recursive
+      - run: terraform init -backend=false
+      - run: terraform validate
